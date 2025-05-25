@@ -1,0 +1,205 @@
+/* Make the page fill the screen */
+.app-container {
+  width: 412px;
+  height: 100vh; /* Ensures full screen height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-image: url("assets/background.png");
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+/* Content styling */
+.content {
+  font-family: sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto; /* Prevent scrolling */
+}
+
+:root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5dadd;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1003; /* Increased from -1 */
+  justify-content: center;
+}
+
+.img_gate {
+  position: absolute;
+  z-index: 5;
+  height: 579px;
+  width: 481px;
+  top: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.img_mountain {
+  position: absolute;
+  z-index: 2;
+  height: 522px;
+  width: 782px;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.img_janur {
+  position: absolute;
+  z-index: 3;
+  height: 404px;
+  width: 397px;
+  top: 17%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bunga_kiri {
+  z-index: 6;
+}
+
+.img_bunga3 {
+  position: absolute;
+  z-index: 3;
+  height: 313px;
+  width: 222px;
+  top: 40%;
+  left: 20%;
+  transform: translateX(-50%);
+}
+
+.img_bunga2 {
+  position: absolute;
+  z-index: 4;
+  height: 244px;
+  width: 180px;
+  top: 52%;
+  left: 20%;
+  transform: translateX(-50%);
+}
+
+.img_bunga4 {
+  position: absolute;
+  z-index: 4;
+  height: 242px;
+  width: 137px;
+  top: 58%;
+  left: 15%;
+  transform: translateX(-50%);
+}
+
+.img_bunga1 {
+  position: absolute;
+  z-index: 5;
+  height: 111px;
+  width: 85px;
+  top: 72%;
+  left: 10%;
+  transform: translateX(-50%);
+}
+
+.bunga_kanan {
+  z-index: 6;
+}
+
+.img_bungapink_kanan {
+  position: absolute;
+  z-index: 3;
+  height: 347px;
+  width: 222px;
+  top: 40%;
+  right: -10%;
+}
+
+.img_pohonijo_kanan {
+  position: absolute;
+  z-index: 4;
+  height: 244px;
+  width: 180px;
+  top: 52%;
+  right: -10%;
+}
+
+.img_padikapas_kanan {
+  position: absolute;
+  z-index: 5;
+  height: 244px;
+  width: 137px;
+  top: 58%;
+  right: 0%;
+}
+
+.img_tanaman_kanan {
+  position: absolute;
+  z-index: 5;
+  height: 122px;
+  width: 77px;
+  top: 72%;
+  right: 10%;
+}
+
+.img_bungabawah_kanan {
+  position: absolute;
+  z-index: 5;
+  height: 111px;
+  width: 82px;
+  top: 72%;
+  right: 0%;
+}
+
+.img_merak {
+  position: absolute;
+  z-index: 5;
+  height: 159px;
+  width: 212px;
+  top: 68%;
+  left: 10%;
+}
+
+.img_kupu2 {
+  position: absolute;
+  z-index: 5;
+  height: 48px;
+  width: 61px;
+  top: 40%;
+  left: 10%;
+  z-index: 7;
+}
+
+.img_kupu1 {
+  position: absolute;
+  z-index: 5;
+  height: 61px;
+  width: 59px;
+  top: 50%;
+  z-index: 7;
+  right: 20%;
+}
+
+.title {
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  text-align: center;
+  z-index: 7;
+  top: 40%;
+  color: #513738;
+}
