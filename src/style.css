@@ -23,7 +23,8 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: auto; /* Prevent scrolling */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-y: auto;
 }
 
 :root {
@@ -63,11 +64,11 @@ body {
 
 .img_janur {
   position: absolute;
-  z-index: 3;
+  z-index: 6;
   height: 404px;
   width: 397px;
-  top: 17%;
-  left: 50%;
+  top: 14%;
+  left: 51%;
   transform: translateX(-50%);
 }
 
@@ -202,4 +203,131 @@ body {
   z-index: 7;
   top: 40%;
   color: #513738;
+}
+
+.second_page {
+  width: 412px;
+  height: 586px; /* Ensures full screen height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-image: url("assets/bg_second.png");
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.center_second_page {
+  width: 306px;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wayang_background {
+  position: absolute;
+  width: 306px;
+  height: 420px;
+  opacity: 30%;
+}
+
+.gapura_background {
+  position: absolute;
+  width: 306px;
+  height: 420px;
+}
+
+.tanaman_kiri {
+  position: absolute;
+  z-index: 5;
+  height: 210px;
+  width: 113px;
+  top: 40%;
+  left: 10%;
+  transform: translateX(-50%);
+}
+
+.bungabawah_kiri {
+  position: absolute;
+  z-index: 6;
+  height: 232px;
+  width: 187px;
+  top: 60%;
+  left: 18%;
+  transform: translateX(-50%);
+}
+
+.wayang_kiri {
+  position: absolute;
+  z-index: 7;
+  height: 151px;
+  width: 122px;
+  top: 60%;
+  left: 8%;
+  transform: translateX(-50%);
+}
+
+.tanaman_kanan {
+  position: absolute;
+  z-index: 5;
+  height: 210px;
+  width: 113px;
+  top: 40%;
+  right: -18%;
+  transform: translateX(-50%);
+}
+
+.bungabawah_kanan {
+  position: absolute;
+  z-index: 6;
+  height: 232px;
+  width: 187px;
+  top: 60%;
+  right: -25%;
+  transform: translateX(-50%);
+}
+
+.wayang_kanan {
+  position: absolute;
+  z-index: 7;
+  height: 151px;
+  width: 122px;
+  top: 60%;
+  right: -22%;
+  transform: translateX(-50%);
+}
+
+.doa {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 17px;
+  color: #79565b;
+  text-align: center;
+  width: 240px;
+  top: 45%;
+  z-index: 99;
+}
+
+.burung {
+  position: absolute;
+  width: 223px;
+  height: 129px;
+  top: 10%;
+  left: 10%;
+}
+
+.background_sec {
+  width: 412px;
+  height: 586px; /* Ensures full screen height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-image: url("assets/background.png");
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  z-index: 1;
 }
