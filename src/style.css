@@ -331,3 +331,324 @@ body {
   justify-content: center;
   z-index: 1;
 }
+
+.background_third {
+  width: 412px;
+  height: 1800px; /* Ensures full screen height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-image: url("assets/background.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.background_cpp {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 180px;
+}
+
+.image_bg_lingkaran {
+  width: 480px;
+  height: 642px;
+  position: absolute;
+}
+
+.image_frame_lingkaran {
+  width: 324px;
+  height: 494px;
+  position: absolute;
+  z-index: 3;
+}
+
+.txt_wedding_of {
+  margin-top: 32px;
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color: #623b48;
+}
+
+.cpp_photo {
+  width: 231px;
+  height: 322px;
+  position: absolute;
+  z-index: 2;
+  margin-top: 90px;
+}
+
+.wayang {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  margin-top: 300px;
+}
+
+.wayang_left {
+  width: 117px;
+  height: 179px;
+}
+
+.wayang_right {
+  width: 117px;
+  height: 179px;
+}
+
+.name {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color: #623b48;
+  margin: 0;
+  line-height: 1;
+}
+
+.title_name {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 20px;
+  color: #623b48;
+  margin: 0;
+  text-align: center;
+}
+
+.instagram {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.instagram_logo {
+  width: 30px;
+  height: 30px;
+}
+
+h3 {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: #623b48;
+  margin: 0;
+  text-align: center;
+}
+
+.background_cpw {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 180px;
+  margin-top: 20px;
+}
+
+.background_fourth {
+  width: 412px;
+  height: 1200px; /* Ensures full screen height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-image: url("assets/background.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.desc_text_time {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  color: #79565b;
+  text-align: center;
+  z-index: 99;
+  line-height: 1;
+  width: 300px;
+  font-style: italic;
+}
+
+.txt_title {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color: #623b48;
+  text-align: center;
+  line-height: 1;
+  margin: 0;
+}
+
+.background_time {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 180px;
+  margin-top: 20px;
+}
+
+.image_bg_time {
+  width: 420px;
+  height: 411px;
+  position: absolute;
+  z-index: 4;
+}
+
+.image_frame_time {
+  width: 276px;
+  height: 459px;
+  position: absolute;
+  z-index: 3;
+}
+
+.time {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color: #623b48;
+  text-align: center;
+  line-height: 1.2;
+  margin: 0;
+  margin-top: 120px;
+}
+
+.count {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color: #623b48;
+  text-align: center;
+  line-height: 1;
+  margin: 0;
+}
+
+.count_time {
+  font-family: "Italianno", cursive;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 30px;
+  color: #623b48;
+  text-align: center;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 250px;
+}
+
+.gate_time {
+  width: 481px;
+  height: 579px;
+  position: absolute;
+  left: -30px;
+  right: 20px;
+  z-index: 1;
+}
+
+.akad_frame {
+  display: flex;
+}
+
+.left_time {
+  width: 150px;
+  height: 491px;
+  z-index: 2;
+  margin-top: 200px;
+  left: -40px;
+  position: absolute;
+}
+
+.right_time {
+  width: 143px;
+  height: 462px;
+  z-index: 2;
+  margin-top: 200px;
+  position: absolute;
+  right: -20px;
+}
+
+.akad_frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.data_time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  position: absolute;
+}
+
+.logo_time {
+  width: 80px;
+  height: 80px;
+}
+
+.time_title {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color: #623b48;
+  line-height: 1;
+  margin: 0;
+}
+
+.time_time {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: #623b48;
+  line-height: 1;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.place_time {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 40px;
+  color: #623b48;
+  line-height: 1;
+  margin: 0;
+  margin-top: 17px;
+  text-align: center;
+}
+
+.address_time {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 17px;
+  color: #623b48;
+  line-height: 1;
+  text-align: center;
+  margin-top: 17px;
+}
+
+.resepsi_frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background_fifth {
+  width: 412px;
+  height: 2034px; /* Ensures full screen height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 600px;
+  background-image: url("assets/background.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
