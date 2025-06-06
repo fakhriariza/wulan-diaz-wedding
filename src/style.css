@@ -11,6 +11,7 @@
   background-position: center;
   justify-content: center;
   z-index: 1;
+  padding-top: 50px;
 }
 
 /* Content styling */
@@ -457,6 +458,7 @@ h3 {
   background-size: cover;
   background-position: center;
   z-index: 1;
+  padding-top: 36px;
 }
 
 .desc_text_time {
@@ -641,7 +643,7 @@ h3 {
 
 .background_fifth {
   width: 412px;
-  height: 2034px; /* Ensures full screen height */
+  height: 1000px; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -651,4 +653,143 @@ h3 {
   background-size: cover;
   background-position: center;
   z-index: 1;
+}
+
+.background_qr {
+  width: 412px;
+  height: 70vh; /* Ensures full screen height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-image: url("assets/background.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.title_qr {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color: #623b48;
+  margin: 0;
+  line-height: 1;
+  text-align: center;
+}
+
+.qr_code {
+  width: 314px;
+  height: 314px;
+  margin-top: 20px;
+}
+
+.desc_qr {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 17px;
+  color: #79565b;
+  text-align: center;
+  width: 240px;
+  z-index: 99;
+  margin-top: 20px;
+}
+
+.background_story {
+  width: 412px;
+  height: 85vh; /* Ensures full screen height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-image: url("assets/background.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.title_story {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  color: #623b48;
+  margin: 0;
+  line-height: 1;
+  text-align: center;
+  margin-top: 100px;
+  z-index: 6;
+}
+
+.card_bottom {
+  width: 360px;
+  height: 245px;
+  margin-top: 32px;
+  background-color: #e9ddbb;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel_story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image_card_story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+  height: 245px;
+  border-radius: 25px;
+}
+
+.desc_year {
+  text-align: center;
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: #623b48;
+  margin: 0;
+  line-height: 1;
+}
+
+.desc_story {
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 17px;
+  color: #79565b;
+  text-align: center;
+  width: 320px;
+  z-index: 99;
+}
+
+.bungataskiri {
+  position: absolute;
+  z-index: 5;
+  height: 165px;
+  width: 150px;
+  left: 0;
+}
+
+.bungaataskanan {
+  position: absolute;
+  z-index: 5;
+  height: 165px;
+  width: 150px;
+  right: 0;
+}
+
+.bgstory {
+  position: absolute;
+  height: 431px;
+  width: 412px;
+  bottom: 0;
 }
