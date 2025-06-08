@@ -48,8 +48,7 @@ body {
   z-index: 5;
   height: 579px;
   width: 481px;
-  top: 6%;
-  left: 50%;
+  top: 5%;
   transform: translateX(-50%);
 }
 
@@ -70,7 +69,6 @@ body {
   height: 404px;
   width: 397px;
   top: 14%;
-  left: 51%;
   transform: translateX(-50%);
 }
 
@@ -80,7 +78,6 @@ body {
   height: 34px;
   width: 32px;
   top: 16.5%;
-  left: 51%;
   transform: translateX(-50%);
 }
 
@@ -90,7 +87,6 @@ body {
   height: 330px;
   width: 227px;
   top: 35%;
-  left: 51%;
   transform: translateX(-50%);
 }
 
@@ -104,7 +100,7 @@ body {
   height: 313px;
   width: 180px;
   top: 40%;
-  left: 20%;
+  left: 0%;
   transform: translateX(-50%);
 }
 
@@ -114,7 +110,7 @@ body {
   height: 244px;
   width: 180px;
   top: 52%;
-  left: 20%;
+  left: 0%;
   transform: translateX(-50%);
 }
 
@@ -124,7 +120,7 @@ body {
   height: 242px;
   width: 137px;
   top: 58%;
-  left: 15%;
+  left: 0%;
   transform: translateX(-50%);
 }
 
@@ -134,7 +130,7 @@ body {
   height: 111px;
   width: 85px;
   top: 72%;
-  left: 10%;
+  left: 0%;
   transform: translateX(-50%);
 }
 
@@ -269,6 +265,7 @@ body {
   top: 63%;
   width: 200px;
   height: 40px;
+  font-family: "Wittgenstein";
   background-color: #4F0A1C;
   color: white;
   font-size: 1.1rem;
@@ -308,6 +305,7 @@ body {
 
 .gapura_background {
   position: absolute;
+  opacity: 30%;
   width: 306px;
   height: 420px;
 }
@@ -348,8 +346,9 @@ body {
   height: 210px;
   width: 113px;
   top: 40%;
-  right: -18%;
-  transform: translateX(-50%);
+  right: 10%; /* bukan -18% */
+  /* hapus transform */
+  /* transform: translateX(-50%); */
 }
 
 .bungabawah_kanan {
@@ -358,8 +357,9 @@ body {
   height: 232px;
   width: 187px;
   top: 60%;
-  right: -25%;
-  transform: translateX(-50%);
+  right: 18%; /* bukan -25% */
+  /* hapus transform */
+  /* transform: translateX(-50%); */
 }
 
 .wayang_kanan {
@@ -368,8 +368,9 @@ body {
   height: 151px;
   width: 122px;
   top: 60%;
-  right: -22%;
-  transform: translateX(-50%);
+  right: 8%; /* bukan -22% */
+  /* hapus transform */
+  /* transform: translateX(-50%); */
 }
 
 .doa {
@@ -383,6 +384,7 @@ body {
 }
 
 .burung {
+  z-index: 107;
   position: absolute;
   width: 223px;
   height: 129px;
