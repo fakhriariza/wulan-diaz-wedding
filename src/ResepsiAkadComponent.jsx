@@ -1,10 +1,10 @@
 import "./style.css";
 import "animate.css";
 import React from "react";
+import { motion } from "framer-motion";
+import MotionImage from "./MotionImage"; // Ensure you import the custom motion image component
 
-import frame_bg from "./assets/page_fourth/frame_time.png";
-import bg_time from "./assets/page_fourth/bg_time.png";
-
+// Assets
 import gate from "./assets/page_fourth/gate.png";
 import left from "./assets/page_fourth/left.png";
 import right from "./assets/page_fourth/right.png";
@@ -15,39 +15,72 @@ class ResepsiAkadComponent extends React.Component {
   render() {
     return (
       <div className="background_fifth">
-        <div className="akad_frame">
-          <img className="gate_time" src={gate}></img>
-          <img className="left_time" src={left}></img>
-          <img className="right_time" src={right}></img>
-          <div className="data_time">
-            <img className="logo_time" src={ring}></img>
+        {/* Akad Nikah Section */}
+        <motion.div className="akad_frame">
+          <MotionImage className="gate_time" src={gate} />
+          <MotionImage className="left_time" src={left} animationType="sway" />
+          <MotionImage
+            className="right_time"
+            src={right}
+            animationType="sway"
+          />
+
+          <motion.div
+            className="data_time"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <MotionImage className="logo_time" src={ring} animationType="fly" />
             <h1 className="time_title">Akad Nikah</h1>
-            <h3 className="time_time">16.00 - 18.00</h3>
+            <h3 className="time_time">15.30 - 17.30</h3>
             <h2 className="place_time">HNI PLAZA</h2>
             <h2 className="address_time">
-              Jl. Raya Kalimalang, RT.3/RW.10, <br></br>
-              Pondok. Kelapa, Duren Sawit <br></br>
+              Jl. Raya Kalimalang, RT.3/RW.10, <br />
+              Pondok. Kelapa, Duren Sawit <br />
               Jakarta Timur, DKI Jakarta 13450
             </h2>
-          </div>
-        </div>
+            <h4 className="filter_button" onClick={this.handleUseFilter}>
+              View Maps
+            </h4>
+          </motion.div>
+        </motion.div>
 
-        <div className="resepsi_frame">
-          <img className="gate_time" src={gate}></img>
-          <img className="left_time" src={left}></img>
-          <img className="right_time" src={right}></img>
-          <div className="data_time">
-            <img className="logo_time" src={glass}></img>
+        {/* Resepsi Section */}
+        <motion.div className="resepsi_frame">
+          <MotionImage className="gate_time" src={gate} />
+          <MotionImage className="left_time" src={left} animationType="sway" />
+          <MotionImage
+            className="right_time"
+            src={right}
+            animationType="sway"
+          />
+
+          <motion.div
+            className="data_time"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <MotionImage
+              className="logo_time"
+              src={glass}
+              animationType="fly"
+            />
             <h1 className="time_title">Resepsi</h1>
             <h3 className="time_time">19.00 - 21.00</h3>
             <h2 className="place_time">HNI PLAZA</h2>
+
             <h2 className="address_time">
-              Jl. Raya Kalimalang, RT.3/RW.10, <br></br>
-              Pondok. Kelapa, Duren Sawit <br></br>
+              Jl. Raya Kalimalang, RT.3/RW.10, <br />
+              Pondok. Kelapa, Duren Sawit <br />
               Jakarta Timur, DKI Jakarta 13450
             </h2>
-          </div>
-        </div>
+            <h4 className="filter_button" onClick={this.handleUseFilter}>
+              View Maps
+            </h4>
+          </motion.div>
+        </motion.div>
       </div>
     );
   }

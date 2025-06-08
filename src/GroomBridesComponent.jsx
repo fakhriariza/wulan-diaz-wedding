@@ -1,7 +1,7 @@
 import "./style.css";
 import "animate.css";
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useRef, useEffect } from "react";
+import { motion, useInView, useAnimation } from "framer-motion";
 
 import frameBelakang from "./assets/page_third/frame_belakang.png";
 import frameLingkaran from "./assets/page_third/frame_lingkaran.png";
@@ -12,45 +12,114 @@ import cpwPhoto from "./assets/page_third/wulan.png";
 
 class GroomBridesComponent extends React.Component {
   render() {
+    const MotionImage = ({
+      src,
+      className,
+      initial,
+      whileInView,
+      animationType = null,
+      transition = { duration: 1 },
+    }) => {
+      const ref = useRef();
+      const isInView = useInView(ref, { once: true, amount: 0.3 });
+      const controls = useAnimation();
+
+      useEffect(() => {
+        if (isInView && animationType) {
+          if (animationType === "sway") {
+            controls.start({
+              rotate: [0, 2, 0, -2, 0],
+              transition: {
+                duration: 4,
+                repeat: Infinity,
+                repeatType: "mirror",
+              },
+            });
+          } else if (animationType === "bounce") {
+            controls.start({
+              y: [0, -5, 0, 5, 0],
+              transition: {
+                duration: 6,
+                repeat: Infinity,
+                repeatType: "mirror",
+              },
+            });
+          } else if (animationType === "fly") {
+            controls.start({
+              x: [0, 10, 0, -10, 0],
+              y: [0, -5, 0, 5, 0],
+              transition: {
+                duration: 4,
+                repeat: Infinity,
+                repeatType: "mirror",
+                ease: "easeInOut",
+              },
+            });
+          }
+        }
+      }, [isInView, animationType, controls]);
+
+      return (
+        <motion.img
+          ref={ref}
+          src={src}
+          className={className}
+          initial={initial}
+          whileInView={whileInView}
+          animate={controls}
+          transition={transition}
+        />
+      );
+    };
+
     return (
       <div className="background_third">
         <motion.h1
           className="txt_wedding_of"
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2 }}
+          viewport={{ once: true, amount: 0.3 }}
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
         >
           The Wedding Of
         </motion.h1>
 
         {/* Groom Section */}
         <div className="background_cpp">
-          <motion.img
+          <MotionImage
             className="image_bg_lingkaran"
             src={frameBelakang}
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 3, repeat: Infinity }}
+            animationType="bounce"
+            initial={{ x: 50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
           />
-          <motion.img
+          <MotionImage
             className="cpp_photo"
             src={cppPhoto}
-            animate={{ scale: [1, 1.02, 1] }}
-            transition={{ duration: 4, repeat: Infinity }}
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
           />
           <img className="image_frame_lingkaran" src={frameLingkaran} />
 
           <div className="wayang">
-            <motion.img
+            <MotionImage
               src={wayang}
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
               className="wayang_left"
-              animate={{ rotate: [-5, 5, -5] }}
-              transition={{ duration: 4, repeat: Infinity }}
+              animationType="sway"
             />
-            <motion.img
+            <MotionImage
               src={wayang}
               className="wayang_right"
-              animate={{ rotate: [5, -5, 5] }}
-              transition={{ duration: 4, repeat: Infinity }}
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
+              animationType="sway"
             />
           </div>
         </div>
@@ -59,46 +128,64 @@ class GroomBridesComponent extends React.Component {
           className="name"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 20 }}
+          transition={{ duration: 1 }}
         >
           Diaz Raviv Nur
         </motion.h1>
-        <p className="title_name">
+        <motion.h1
+          className="title_name"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
           A son raised with love by <br /> M. Nur Azirana & Destie Surya Wijaya
-        </p>
+        </motion.h1>
         <div className="instagram">
-          <img src={instagramLogo} className="instagram_logo" />
+          <img
+            src={instagramLogo}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="instagram_logo"
+          />
           <h3>@diazraviv</h3>
         </div>
 
         {/* Bride Section */}
         <div className="background_cpw">
-          <motion.img
+          <MotionImage
             className="image_bg_lingkaran"
             src={frameBelakang}
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 3, repeat: Infinity }}
+            animationType="bounce"
+            initial={{ x: 50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
           />
-          <motion.img
+          <MotionImage
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
             className="cpp_photo"
             src={cpwPhoto}
-            animate={{ scale: [1, 1.02, 1] }}
-            transition={{ duration: 4, repeat: Infinity }}
           />
           <img className="image_frame_lingkaran" src={frameLingkaran} />
 
           <div className="wayang">
-            <motion.img
+            <MotionImage
               src={wayang}
               className="wayang_left"
-              animate={{ rotate: [-5, 5, -5] }}
-              transition={{ duration: 4, repeat: Infinity }}
+              animationType="sway"
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
             />
-            <motion.img
+            <MotionImage
               src={wayang}
               className="wayang_right"
-              animate={{ rotate: [5, -5, 5] }}
-              transition={{ duration: 4, repeat: Infinity }}
+              animationType="sway"
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
             />
           </div>
         </div>
@@ -111,10 +198,15 @@ class GroomBridesComponent extends React.Component {
         >
           Wulan Asri Septia
         </motion.h1>
-        <p className="title_name">
+        <motion.h1
+          className="title_name"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
           The joy and grace of her family, daughter of <br />
-          Dharma Bakti Agustin S. & Agus Sri Rahayu
-        </p>
+          (Alm.) Dharma Bakti Agustin S. & Agus Sri Rahayu
+        </motion.h1>
         <div className="instagram">
           <img src={instagramLogo} className="instagram_logo" />
           <h3>@wulanasrr</h3>

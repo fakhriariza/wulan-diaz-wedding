@@ -101,7 +101,7 @@ class DoaComponent extends React.Component {
               src={wayangtengah}
               className="wayang_background"
               initial={{ x: -50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
+              whileInView={{ x: 0, opacity: 0.1 }}
               transition={{ duration: 1 }}
             />
             <MotionImage
