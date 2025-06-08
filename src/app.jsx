@@ -7,10 +7,15 @@ import GroomBridesComponent from "./GroomBridesComponent";
 import TimeDataComponent from "./TimeDateComponent";
 import ResepsiAkadComponent from "./ResepsiAkadComponent";
 import { getMissionData } from "./dummy-data/mission-data";
+import { getWishData } from "./dummy-data/wish-data";
 import QrComponent from "./QrComponent";
 import OurStoryComponent from "./OurStoryComponent";
 import PotraitOfUseComponent from "./PotraitOfUseComponent";
 import axios from "axios";
+import GiftComponent from "./GiftComponent";
+import FilterComponent from "./FilterComponent";
+import WishComponent from "./WishComponent";
+import FinishComponent from "./FinishComponent";
 
 class MyComponent extends React.Component {
   constructor(props) {
@@ -22,6 +27,7 @@ class MyComponent extends React.Component {
       // slug: this.getSlugFromUrl(),
       // guestData: null,
       // loading: true,
+      wishData: getWishData(),
     };
   }
   handleOpenInvitation = () => {
@@ -54,6 +60,8 @@ class MyComponent extends React.Component {
   render() {
     const { guestData, loading, isOpened } = this.state;
     if (loading) return <div>Loading...</div>;
+    const { missionData } = this.state;
+    const { wishData } = this.state;
 
     return (
       <div className="render_about">
@@ -70,6 +78,11 @@ class MyComponent extends React.Component {
             <TimeDataComponent />
             <ResepsiAkadComponent />
             <QrComponent />
+            <PotraitOfUseComponent data={missionData} />
+            <GiftComponent />
+            <FilterComponent />
+            <WishComponent data={wishData} />
+            <FinishComponent />
           </div>
         )}
       </div>

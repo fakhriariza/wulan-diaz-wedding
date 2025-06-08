@@ -238,14 +238,13 @@ body {
 .title-theweddingof-opened {
   position: absolute;
   font-family: "Wittgenstein";
-  font-style:initial;
+  font-style: initial;
   font-size: 18px;
   text-align: center;
   z-index: 1000;
   top: 25%;
   color: #513738;
 }
-
 
 .guest-name {
   position: absolute;
@@ -266,7 +265,7 @@ body {
   width: 200px;
   height: 40px;
   font-family: "Wittgenstein";
-  background-color: #4F0A1C;
+  background-color: #4f0a1c;
   color: white;
   font-size: 1.1rem;
   border: none;
@@ -818,7 +817,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 360px;
+  width: 360px !important;
   height: 245px;
   border-radius: 25px;
 }
@@ -865,4 +864,436 @@ h3 {
   height: 431px;
   width: 412px;
   bottom: 0;
+}
+
+.background_potrait {
+  width: 412px;
+  height: 80vh; /* Ensures full screen height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-image: url("assets/background.png");
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  z-index: 1;
+  overflow: auto;
+}
+
+.carousel .slide img {
+  border-radius: 25px;
+  width: 25% !important;
+  height: 100% !important;
+}
+
+.carousel .thumb {
+  border: 0 !important;
+  border-radius: 25px;
+  height: 129px;
+  width: 99px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+
+.carousel .thumb img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: inherit;
+}
+
+.txt_potrait {
+  margin-top: 32px;
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color: #623b48;
+}
+
+.carousel .control-dots {
+  display: none; /* optional: hides dots if you only want thumbnails */
+}
+
+.carousel .thumbs-wrapper {
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  white-space: nowrap !important;
+  width: 100% !important;
+}
+
+/* Prevent thumbnails from wrapping */
+.carousel .thumbs {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  width: max-content !important;
+}
+
+/* Optional: Hide scrollbar */
+.carousel .thumbs-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.carousel .thumbs-wrapper {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.background_gift {
+  width: 412px;
+  height: 70vh; /* Ensures full screen height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-image: url("assets/background.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  padding-top: 32px;
+}
+
+.title_gift {
+  margin-top: 32px;
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color: #623b48;
+}
+
+.desc_gift {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 17px;
+  color: #79565b;
+  text-align: center;
+  width: 308px;
+  z-index: 99;
+  margin-top: 10px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.bank_first {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  width: 275px;
+  height: 66px;
+  margin-top: 35px;
+  background-color: #e9ddbb;
+  border-radius: 15px;
+  padding-top: 20px;
+  padding-bottom: 7px;
+  padding-left: 9px;
+  padding-right: 9px;
+  align-items: center;
+}
+
+.bank_second {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 275px;
+  height: 66px;
+  background-color: #e9ddbb;
+  margin-top: 13px;
+  border-radius: 15px;
+  padding-top: 20px;
+  padding-bottom: 7px;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.logo {
+  width: 51px;
+  height: 36px;
+  margin-bottom: 20px;
+}
+
+.bank_text {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 12px;
+  color: #79565b;
+  text-align: center;
+  width: 308px;
+  z-index: 99;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.button_copy {
+  width: 80px;
+  height: 10px;
+  background-color: #4f0a1c;
+  color: white;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 7px;
+  border-radius: 25px;
+  padding: 2px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.bunga_gift {
+  position: absolute;
+  z-index: 7;
+  height: 236px;
+  width: 85px;
+  top: 40%;
+  left: 0;
+}
+
+.background_filter {
+  width: 412px;
+  height: 100vh; /* Ensures full screen height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-image: url("assets/background.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  padding-top: 20px;
+}
+
+.title_filter {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color: #623b48;
+  z-index: 3;
+}
+
+.desc_filter {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 17px;
+  color: #79565b;
+  text-align: center;
+  width: 240px;
+  z-index: 99;
+}
+
+.img_filter {
+  width: 294px;
+  height: 492px;
+  z-index: 3;
+}
+
+.filter_button {
+  width: 94px;
+  height: 22px;
+  background-color: #4f0a1c;
+  color: white;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 11px;
+  border-radius: 25px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 20px;
+  z-index: 3;
+}
+
+.bgfilter {
+  position: absolute;
+  z-index: 2;
+  width: 412px;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 50%;
+}
+
+.bungafilter {
+  position: absolute;
+  z-index: 7;
+  height: 176px;
+  width: 120px;
+  top: 65%;
+  right: 0;
+}
+
+.background_wish {
+  width: 412px;
+  height: 100vh; /* Ensures full screen height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-image: url("assets/background.png");
+  background-size: cover;
+  background-position: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+.title_wish {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color: #623b48;
+  z-index: 3;
+  text-align: center;
+}
+
+.input_wish {
+  width: 275px;
+  height: 33px;
+  background-color: #fffbf0;
+  border-radius: 15px;
+  font-size: 24px;
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #623b48;
+  z-index: 3;
+  border: 0;
+  text-align: center;
+}
+
+.button_send {
+  width: 275px;
+  height: 33px;
+  background-color: #e9ddbb;
+  border-radius: 15px;
+  font-size: 24px;
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #623b48;
+  margin-top: 24px;
+  margin-bottom: 31px;
+  z-index: 3;
+  text-align: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.wish_item {
+  width: 275px;
+  height: fit-content;
+  border: 1px solid black; /* 👈 this sets width, style, and color */
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.name_wish {
+  font-size: 13px;
+  font-family: "Cormorant Garamond", serif;
+  color: #79565b;
+  font-weight: 700;
+  z-index: 3;
+}
+
+.time_wish {
+  font-size: 10px;
+  font-family: "Cormorant Garamond", serif;
+  color: #79565b;
+  font-weight: 400;
+  z-index: 3;
+}
+
+.wish {
+  font-size: 13px;
+  font-family: "Cormorant Garamond", serif;
+  color: #79565b;
+  font-weight: 400;
+  z-index: 3;
+}
+
+.wish_list {
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.text_finish {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  z-index: 100;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.title_finish {
+  font-size: 11px;
+  font-family: "Cormorant Garamond", serif;
+  color: #513738;
+  font-weight: 500;
+  z-index: 100;
+  text-align: center;
+}
+
+.name_finish {
+  font-size: 32px;
+  font-family: "Alex Brush", cursive;
+  color: #513738;
+  font-weight: 500;
+  z-index: 100;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.img_logo_finish {
+  width: 44px;
+  height: 48px;
+  margin-top: 12px;
+  z-index: 100;
+}
+
+.desc_finish {
+  font-weight: 11px;
+  font-family: "Cormorant Garamond", serif;
+  color: #513738;
+  font-weight: 700;
+  z-index: 100;
+  text-align: center;
+}
+
+.img_mountain_finish {
+  position: absolute;
+  z-index: 2;
+  height: 522px;
+  width: 782px;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 50%;
+}
+
+.img_bunga3_finish {
+  position: absolute;
+  z-index: 3;
+  height: 313px;
+  width: 222px;
+  top: 40%;
+  left: 20%;
+  transform: translateX(-50%);
+  opacity: 50%;
+}
+
+.img_bungapink_kanan_finish {
+  position: absolute;
+  z-index: 3;
+  height: 347px;
+  width: 222px;
+  top: 40%;
+  right: -10%;
+  opacity: 50%;
 }
