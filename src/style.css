@@ -711,6 +711,8 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0; 
+  padding-bottom: 0;
 }
 
 .background_fifth {
@@ -738,6 +740,8 @@ h3 {
   background-size: cover;
   background-position: center;
   z-index: 1;
+   margin-top: 0;
+  padding-top: 0;
 }
 
 .title_qr {
@@ -981,7 +985,7 @@ h3 {
   flex-direction: row;
   justify-content: baseline;
   width: 275px;
-  height: 66px;
+  height: 100px;
   margin-top: 35px;
   background-color: #e9ddbb;
   border-radius: 15px;
@@ -998,7 +1002,7 @@ h3 {
   justify-content: center;
   align-items: center;
   width: 275px;
-  height: 66px;
+  height: 100px;
   background-color: #e9ddbb;
   margin-top: 13px;
   border-radius: 15px;
@@ -1026,12 +1030,12 @@ h3 {
 }
 
 .button_copy {
-  width: 80px;
-  height: 10px;
+  width: 90px;
+  height: 20px;
   background-color: #4f0a1c;
   color: white;
   font-family: "Cormorant Garamond", serif;
-  font-size: 7px;
+  font-size: 12px;
   border-radius: 25px;
   padding: 2px;
   justify-content: center;
@@ -1059,7 +1063,6 @@ h3 {
   background-size: cover;
   background-position: center;
   z-index: 1;
-  padding-top: 20px;
 }
 
 .title_filter {
@@ -1116,7 +1119,7 @@ h3 {
 
 .bungafilter {
   position: absolute;
-  z-index: 7;
+  z-index: 1;
   height: 176px;
   width: 120px;
   top: 65%;
@@ -1133,7 +1136,6 @@ h3 {
   background-image: url("assets/background.png");
   background-size: cover;
   background-position: center;
-  padding-top: 20px;
   z-index: 1;
 }
 
@@ -1281,21 +1283,21 @@ h3 {
   position: absolute;
   z-index: 3;
   height: 313px;
-  width: 222px;
+  width: 180px;
   top: 40%;
-  left: 20%;
+  left: 0%;
   transform: translateX(-50%);
-  opacity: 50%;
+  opacity: 70%;
 }
 
 .img_bungapink_kanan_finish {
   position: absolute;
-  z-index: 3;
+  z-index: 1;
   height: 347px;
-  width: 222px;
+  width: 200px;
   top: 40%;
   right: -10%;
-  opacity: 50%;
+  opacity: 70%;
 }
 
 .audio-player {

@@ -143,7 +143,7 @@ class FinishComponent extends React.Component {
           />
           <motion.img
             src={bunga3}
-            className="img_bunga3"
+            className="img_bunga3_finish"
             animate={{ rotate: [0, 1, 0, -1, 0] }}
             transition={{ duration: 5, repeat: Infinity }}
           />
@@ -158,7 +158,7 @@ class FinishComponent extends React.Component {
         <div className="bunga_kanan">
           <motion.img
             src={bungapink_kanan}
-            className="img_bungapink_kanan"
+            className="img_bungapink_kanan_finish"
             animate={{ rotate: [0, -1.5, 0, 1.5, 0] }}
             transition={{ duration: 6, repeat: Infinity }}
           />

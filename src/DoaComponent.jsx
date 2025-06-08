@@ -118,10 +118,10 @@ class DoaComponent extends React.Component {
               transition={{ duration: 1.2 }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              “And among His signs is that He created for you from yourselves
-              spouses that you may find tranquility in them; and He placed
-              between you affection and mercy. Indeed, in that are signs for a
-              people who give thought.”
+              “And among Allah signs is that Allah created for you from
+              yourselves spouses that you may find tranquility in them; and
+              Allah placed between you affection and mercy. Indeed, in that are
+              signs for a people who give thought.”
               <br />
               <br />
               (QS, Ar-Rum: 21)
