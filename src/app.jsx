@@ -1,3 +1,4 @@
+// App.js
 import React from "react";
 import { createRoot } from "react-dom/client";
 import HeaderComponent from "./HeaderComponent";
@@ -9,35 +10,73 @@ import { getMissionData } from "./dummy-data/mission-data";
 import QrComponent from "./QrComponent";
 import OurStoryComponent from "./OurStoryComponent";
 import PotraitOfUseComponent from "./PotraitOfUseComponent";
+import axios from "axios";
 
-// Define MyComponent first
 class MyComponent extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       missionData: getMissionData(),
+      isOpened: false,
+      // slug: this.getSlugFromUrl(),
+      // guestData: null,
+      // loading: true,
     };
   }
+  handleOpenInvitation = () => {
+    this.setState({ isOpened: true });
+  };
+
+  getSlugFromUrl = () => {
+    const url = window.location.href;
+    const match = url.match(/mengundang=([^&]+)/);
+    console.log(123123, match);
+    return match ? match[1] : null;
+  };
+
+  // componentDidMount() {
+  //   const { slug } = this.state;
+
+  //   if (!slug) return;
+
+  //   axios
+  //     .get(`http://localhost:5000/api/wedding/v1/guests/slug/${slug}`)
+  //     .then((response) => {
+  //       this.setState({ guestData: response.data, loading: false });
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error fetching guest data:", error);
+  //       this.setState({ loading: false });
+  //     });
+  // }
 
   render() {
-    const { missionData } = this.state;
+    const { guestData, loading, isOpened } = this.state;
+    if (loading) return <div>Loading...</div>;
 
     return (
       <div className="render_about">
-        <HeaderComponent />
-        <DoaComponent />
-        <GroomBridesComponent />
-        <OurStoryComponent data={missionData} />
-        <TimeDataComponent />
-        <ResepsiAkadComponent />
-        <QrComponent />
-        {/* <PotraitOfUseComponent data={missionData} /> */}
+        <HeaderComponent
+          guestData={guestData}
+          onOpen={this.handleOpenInvitation}
+          isOpened={isOpened}
+        />
+        {isOpened && (
+          <div className="animate__animated animate__fadeIn animate__slow">
+            <DoaComponent />
+            <GroomBridesComponent />
+            <OurStoryComponent data={getMissionData()} />
+            <TimeDataComponent />
+            <ResepsiAkadComponent />
+            <QrComponent />
+          </div>
+        )}
       </div>
     );
   }
 }
 
-// Then render it
 const root = createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
