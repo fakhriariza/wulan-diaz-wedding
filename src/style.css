@@ -1297,3 +1297,31 @@ h3 {
   right: -10%;
   opacity: 50%;
 }
+
+.audio-player {
+  position: fixed;
+  bottom: 20px; /* distance from bottom of screen */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999; /* ensure it stays above other elements */
+  padding: 10px;
+  border-radius: 15px;
+  width: 412px;
+}
+
+.play-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.play-button img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s ease;
+}
+
+.play-button:hover img {
+  transform: scale(1.1);
+}

@@ -236,7 +236,10 @@ class HeaderComponent extends React.Component {
         {!isOpened && (
           <button
             className="open-invite-btn animate__animated animate__fadeInUp animate__delay-1s"
-            onClick={() => onOpen?.()}
+            onClick={() => {
+              window.dispatchEvent(new Event("startAudio"));
+              onOpen?.();
+            }}
           >
             Open Invitation
           </button>

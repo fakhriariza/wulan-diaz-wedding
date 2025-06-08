@@ -16,6 +16,7 @@ import GiftComponent from "./GiftComponent";
 import FilterComponent from "./FilterComponent";
 import WishComponent from "./WishComponent";
 import FinishComponent from "./FinishComponent";
+import AudioPlayer from "./AudioPlayer";
 
 class MyComponent extends React.Component {
   constructor(props) {
@@ -70,6 +71,7 @@ class MyComponent extends React.Component {
           onOpen={this.handleOpenInvitation}
           isOpened={isOpened}
         />
+        <AudioPlayer />
         {isOpened && (
           <div className="animate__animated animate__fadeIn animate__slow">
             <DoaComponent />
