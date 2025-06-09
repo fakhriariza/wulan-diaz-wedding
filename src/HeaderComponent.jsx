@@ -227,9 +227,12 @@ class HeaderComponent extends React.Component {
           </>
         )}
 
-        {guestName && (
+        {!isOpened && guestName && (
           <p className="guest-name animate__animated animate__fadeInUp animate__delay-2s">
-            Kepada Yth: {guestName} {isWithPartner ? "dan Partner" : ""}
+            Kepada Yth: <br></br>{" "}
+            <strong>
+              {guestName} {isWithPartner ? "dan Partner" : ""}
+            </strong>
           </p>
         )}
 

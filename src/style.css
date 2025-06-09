@@ -248,13 +248,15 @@ body {
 
 .guest-name {
   position: absolute;
-  font-family: "Alex Brush", cursive;
+  font-family: "Wittgenstein";
   font-weight: 400;
   font-style: normal;
-  font-size: 48px;
-  text-align: center;
+  font-size: 20px;
+  text-align: center; /* Centers the text within the element */
   z-index: 1000;
-  top: 27%;
+  top: 50%;
+  width: 200px;
+  height: 40px;
   color: #513738;
 }
 

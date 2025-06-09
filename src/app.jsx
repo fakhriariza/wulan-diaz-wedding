@@ -25,7 +25,7 @@ class MyComponent extends React.Component {
     this.state = {
       missionData: getMissionData(),
       isOpened: false,
-      // slug: this.getSlugFromUrl(),
+      slug: this.getSlugFromUrl(),
       // guestData: null,
       // loading: true,
       wishData: getWishData(),
@@ -38,25 +38,27 @@ class MyComponent extends React.Component {
   getSlugFromUrl = () => {
     const url = window.location.href;
     const match = url.match(/mengundang=([^&]+)/);
-    console.log(123123, match);
-    return match ? match[1] : null;
+    console.log("slug match", match);
+    return match ? decodeURIComponent(match[1]) : null;
   };
 
-  // componentDidMount() {
-  //   const { slug } = this.state;
+  componentDidMount() {
+    const { slug } = this.state;
 
-  //   if (!slug) return;
+    if (!slug) return;
 
-  //   axios
-  //     .get(`http://localhost:5000/api/wedding/v1/guests/slug/${slug}`)
-  //     .then((response) => {
-  //       this.setState({ guestData: response.data, loading: false });
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error fetching guest data:", error);
-  //       this.setState({ loading: false });
-  //     });
-  // }
+    axios
+      .get(
+        `https://doa-backend.my.id/invitation/api/wedding/v1/guests/slug/${slug}`
+      )
+      .then((response) => {
+        this.setState({ guestData: response.data, loading: false });
+      })
+      .catch((error) => {
+        console.error("Error fetching guest data:", error);
+        this.setState({ loading: false });
+      });
+  }
 
   render() {
     const { guestData, loading, isOpened } = this.state;
