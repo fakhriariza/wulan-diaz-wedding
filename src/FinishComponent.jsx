@@ -112,7 +112,7 @@ class FinishComponent extends React.Component {
     const isWithPartner = guestData?.partner;
 
     return (
-      <div className="app-container">
+      <div className="app-container-finish">
         <div className="top-background animate__animated animate__fadeInDown animate__slower" />
 
         {/* images */}

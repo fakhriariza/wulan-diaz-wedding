@@ -16,6 +16,22 @@
   padding-top: 50px;
 }
 
+.app-container-finish {
+  width: 412px;
+  height: 80vh; /* Ensures full screen height */
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-image: url("assets/background.png");
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  z-index: 1;
+  padding-bottom: 0; /* Untuk menghindari elemen ketutupan nav bar HP */
+}
+
 /* Content styling */
 .content {
   font-family: sans-serif;
@@ -787,7 +803,7 @@ h3 {
 .background_qr {
   padding-top: 32px;
   width: 412px;
-  height: 90vh; /* Ensures full screen height */
+  height: 100vh; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1138,7 +1154,7 @@ h3 {
 .background_filter {
   padding-top: 32px;
   width: 412px;
-  height: 90vh; /* Ensures full screen height */
+  height: 100vh; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
