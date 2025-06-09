@@ -397,7 +397,7 @@ body {
 
 .background_sec {
   width: 412px;
-    min-height: 100vh;
+  height: 586px; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -411,9 +411,7 @@ body {
 
 .background_third {
   width: 412px;
-  height: 210vh; /* Ensures full screen height */
-  padding-bottom: 50px; /* Untuk menghindari elemen ketutupan nav bar HP */
-
+  height: 1850; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -537,9 +535,7 @@ h3 {
 
 .background_fourth {
   width: 412px;
-   height: 130vh; /* Ensures full screen height */
-    min-height: 100vh;
-  padding-bottom: 50px; /* Ensures full screen height */
+  height: 1200px; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -735,9 +731,7 @@ h3 {
 
 .background_fifth {
   width: 412px;
-  height: 100vh; /* Ensures full screen height */
-    min-height: 100vh;
-  padding-bottom: 50px;
+  height: 1000px; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -793,7 +787,7 @@ h3 {
 
 .background_story {
   width: 412px;
-  height: 100vh; /* Ensures full screen height */
+  height: 85vh; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -967,9 +961,7 @@ h3 {
 
 .background_gift {
   width: 412px;
-  height: 60vh; /* Ensures full screen height */
-    min-height: 50vh;
-  padding-bottom: 50px;
+  height: 55vh; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1093,7 +1085,7 @@ h3 {
 
 .background_filter {
   width: 412px;
-  height: 80vh; /* Ensures full screen height */
+  height: 60vh; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
