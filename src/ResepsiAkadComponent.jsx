@@ -40,9 +40,14 @@ class ResepsiAkadComponent extends React.Component {
               Pondok. Kelapa, Duren Sawit <br />
               Jakarta Timur, DKI Jakarta 13450
             </h2>
-            <h4 className="filter_button" onClick={this.handleUseFilter}>
+            <a
+              href="https://maps.app.goo.gl/ChgqSpQ1LjgiufHn9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="filter_button"
+            >
               View Maps
-            </h4>
+            </a>
           </motion.div>
         </motion.div>
 
@@ -76,9 +81,14 @@ class ResepsiAkadComponent extends React.Component {
               Pondok. Kelapa, Duren Sawit <br />
               Jakarta Timur, DKI Jakarta 13450
             </h2>
-            <h4 className="filter_button" onClick={this.handleUseFilter}>
+            <a
+              href="https://maps.app.goo.gl/ChgqSpQ1LjgiufHn9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="filter_button"
+            >
               View Maps
-            </h4>
+            </a>
           </motion.div>
         </motion.div>
       </div>

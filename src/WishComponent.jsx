@@ -28,7 +28,7 @@ function WishComponent({ data }) {
         type="text"
         value={text}
         onChange={(e) => setText(e.target.value)}
-        placeholder="Type here..."
+        placeholder="Give Your Wish!"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
