@@ -48,10 +48,10 @@ class MyComponent extends React.Component {
     if (!slug) return;
 
     axios
-      // .get(`http://localhost:5000/api/wedding/v1/guests/slug/${slug}`)
-      .get(
-        `https://doa-backend.my.id/invitation/api/wedding/v1/guests/slug/${slug}`
-      )
+      .get(`http://localhost:5000/api/wedding/v1/guests/slug/${slug}`)
+      // .get(
+      //   `https://doa-backend.my.id/invitation/api/wedding/v1/guests/slug/${slug}`
+      // )
       .then((response) => {
         this.setState({ guestData: response.data, loading: false });
       })
