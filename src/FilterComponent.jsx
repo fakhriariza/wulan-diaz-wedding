@@ -37,17 +37,20 @@ class FilterComponent extends React.Component {
           Capture your moment while attending our wedding by using the Instagram
           filter below.
         </motion.h1>
-
-        <MotionImage
-          className="img_filter"
-          src={filter}
-          alt="Instagram Filter"
-          animationType="bounce"
-        />
-
-        <h4 className="filter_button" onClick={this.handleUseFilter}>
-          Use Filter
-        </h4>
+        <a
+          href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDMwNTAxOTMyNDU2MTA0?story_media_id=3651114534276086422&igsh=NDZ6Z2xxM2cyanB3"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="filter_link"
+        >
+          <MotionImage
+            className="img_filter"
+            src={filter}
+            alt="Instagram Filter"
+            animationType="bounce"
+          />
+          <h4 className="filter_button">Use Filter</h4>
+        </a>
 
         <MotionImage
           className="bungafilter"

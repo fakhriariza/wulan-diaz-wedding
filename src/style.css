@@ -1133,6 +1133,24 @@ h3 {
   z-index: 3;
 }
 
+.filter_link {
+  display: flex;
+  flex-direction: column; /* atau row jika horizontal */
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.filter_link:hover .img_filter {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+
+.filter_link:hover .filter_button {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+
 .filter_button {
   width: 120px;
   height: 30px;
