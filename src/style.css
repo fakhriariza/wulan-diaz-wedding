@@ -495,14 +495,24 @@ body {
 
 .instagram {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  text-decoration: none;
+   color: #623b48;
+  cursor: pointer;
 }
 
 .instagram_logo {
   width: 30px;
   height: 30px;
 }
+.instagram:hover {
+  transform: scale(1.03);
+  transition: transform 0.2s;
+}
+.instagram_logo:hover {
+  opacity: 0.8;
+}
+
 
 h3 {
   font-family: "Italianno", cursive;
@@ -986,8 +996,8 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: baseline;
-  width: 275px;
-  height: 100px;
+  width: 304px;
+  height: 73px;
   margin-top: 35px;
   background-color: #e9ddbb;
   border-radius: 15px;
@@ -1003,8 +1013,8 @@ h3 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 275px;
-  height: 100px;
+ width: 304px;
+  height: 73px;
   background-color: #e9ddbb;
   margin-top: 13px;
   border-radius: 15px;
@@ -1032,17 +1042,27 @@ h3 {
 }
 
 .button_copy {
-  width: 90px;
-  height: 20px;
+  width: 101px;
+  height: 25px;
   background-color: #4f0a1c;
   color: white;
   font-family: "Cormorant Garamond", serif;
-  font-size: 12px;
+  font-size: 10px;
   border-radius: 25px;
-  padding: 2px;
-  justify-content: center;
-  align-items: center;
+  padding: 2px 10px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;             /* 🔒 menjaga agar teks 1 baris */
+  overflow: hidden;                /* 🔒 hindari overflow */
+  text-overflow: ellipsis;         /* 🔒 tampilkan ... jika terlalu panjang */
+  cursor: pointer;                 /* pointer saat hover */
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.button_copy:hover {
+  background-color: #4f0a1c;       /* tetap, atau sesuaikan kalau ingin lebih terang */
+  transform: scale(1.05);          /* efek membesar */
 }
 
 .bunga_gift {

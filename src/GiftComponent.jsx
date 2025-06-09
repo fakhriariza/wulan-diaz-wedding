@@ -77,7 +77,7 @@ class GiftComponent extends React.Component {
         >
           <img className="logo" src={mandiri} alt="Mandiri Bank logo" />
           <p className="bank_text">
-            BANK BRI (008)
+            BANK Mandiri (008)
             <br />
             Account Number 1670002685823
             <br />

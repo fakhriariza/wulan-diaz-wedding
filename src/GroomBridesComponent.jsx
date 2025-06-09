@@ -84,6 +84,17 @@ class GroomBridesComponent extends React.Component {
         >
           The Wedding Of
         </motion.h1>
+        <motion.h2
+          className="desc_gift"
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2 }}
+          viewport={{ once: true, amount: 0.3 }}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+        >
+          With the blessing of the almighty Allah S.W.T., it would be our utmost
+          joy to have your presence bestowed upon our cherished wedding of
+        </motion.h2>
 
         {/* Groom Section */}
         <div className="background_cpp">
@@ -140,8 +151,13 @@ class GroomBridesComponent extends React.Component {
         >
           A son raised with love by <br /> M. Nur Azirana & Destie Surya Wijaya
         </motion.h1>
-        <div className="instagram">
-          <img
+        <a
+          href="https://www.instagram.com/diazraviv?igsh=MWxpZnYwcHZpd2YybA%3D%3D&utm_source=qr"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="instagram"
+        >
+          <motion.img
             src={instagramLogo}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -149,8 +165,7 @@ class GroomBridesComponent extends React.Component {
             className="instagram_logo"
           />
           <h3>@diazraviv</h3>
-        </div>
-
+        </a>
         {/* Bride Section */}
         <div className="background_cpw">
           <MotionImage
@@ -207,10 +222,16 @@ class GroomBridesComponent extends React.Component {
           The joy and grace of her family, daughter of <br />
           (Alm.) Dharma Bakti Agustin S. & Agus Sri Rahayu
         </motion.h1>
-        <div className="instagram">
+        <a
+          href="https://www.instagram.com/wulanasrr?igsh=bHJmaXAwczFibWxm"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="instagram"
+          aria-label="Visit Instagram profile of @wulanasrr"
+        >
           <img src={instagramLogo} className="instagram_logo" />
           <h3>@wulanasrr</h3>
-        </div>
+        </a>
       </div>
     );
   }
