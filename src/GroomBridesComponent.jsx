@@ -85,7 +85,7 @@ class GroomBridesComponent extends React.Component {
           The Wedding Of
         </motion.h1>
         <motion.h2
-          className="desc_gift"
+          className="desc_grooms_brides"
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
           viewport={{ once: true, amount: 0.3 }}

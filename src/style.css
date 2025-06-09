@@ -722,6 +722,7 @@ h3 {
 }
 
 .resepsi_frame {
+  padding-top: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -744,6 +745,7 @@ h3 {
 }
 
 .background_qr {
+  padding-top: 32px;
   width: 412px;
   height: 80vh; /* Ensures full screen height */
   display: flex;
@@ -759,6 +761,8 @@ h3 {
 }
 
 .title_qr {
+  padding-top: 32px;
+
   font-family: "Italianno", cursive;
   font-weight: 400;
   font-style: normal;
@@ -787,7 +791,7 @@ h3 {
 
 .background_story {
   width: 412px;
-  height: 85vh; /* Ensures full screen height */
+  height: 90vh; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -961,7 +965,7 @@ h3 {
 
 .background_gift {
   width: 412px;
-  height: 55vh; /* Ensures full screen height */
+  height: 60vh; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -990,6 +994,16 @@ h3 {
   width: 308px;
   z-index: 99;
   margin-top: 10px;
+  font-weight: bold;
+  font-style: italic;
+}
+.desc_grooms_brides {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 17px;
+  color: #79565b;
+  text-align: center;
+  width: 308px;
+  z-index: 99;
   font-weight: bold;
   font-style: italic;
 }
@@ -1084,8 +1098,9 @@ h3 {
 }
 
 .background_filter {
+  padding-top: 32px;
   width: 412px;
-  height: 60vh; /* Ensures full screen height */
+  height: 80vh; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1164,6 +1179,7 @@ h3 {
 }
 
 .background_wish {
+  padding-top: 32px;
   width: 412px;
   height: 100vh; /* Ensures full screen height */
   display: flex;
