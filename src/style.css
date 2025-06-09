@@ -1284,7 +1284,7 @@ h3 {
   font-weight: 400;
   font-style: normal;
   color: #623b48;
-  z-index: 3;
+  z-index: 1000;
   border: 0;
   text-align: center;
 }

@@ -1,17 +1,20 @@
 // App.js
 import React from "react";
+import axios from "axios";
+import { getMissionData } from "./dummy-data/mission-data";
+import { getWishData } from "./dummy-data/wish-data";
 import { createRoot } from "react-dom/client";
+import api from "./api";
+
 import HeaderComponent from "./HeaderComponent";
 import DoaComponent from "./DoaComponent";
 import GroomBridesComponent from "./GroomBridesComponent";
 import TimeDataComponent from "./TimeDateComponent";
 import ResepsiAkadComponent from "./ResepsiAkadComponent";
-import { getMissionData } from "./dummy-data/mission-data";
-import { getWishData } from "./dummy-data/wish-data";
+
 import QrComponent from "./QrComponent";
 import OurStoryComponent from "./OurStoryComponent";
 import PotraitOfUseComponent from "./PotraitOfUseComponent";
-import axios from "axios";
 import GiftComponent from "./GiftComponent";
 import FilterComponent from "./FilterComponent";
 import WishComponent from "./WishComponent";
@@ -38,7 +41,6 @@ class MyComponent extends React.Component {
   getSlugFromUrl = () => {
     const url = window.location.href;
     const match = url.match(/mengundang=([^&]+)/);
-    console.log("slug match", match);
     return match ? decodeURIComponent(match[1]) : null;
   };
 
@@ -47,11 +49,8 @@ class MyComponent extends React.Component {
 
     if (!slug) return;
 
-    axios
-      // .get(`http://localhost:5000/api/wedding/v1/guests/slug/${slug}`)
-      .get(
-        `https://doa-backend.my.id/invitation/api/wedding/v1/guests/slug/${slug}`
-      )
+    api
+      .get(`/guests/slug/${slug}`)
       .then((response) => {
         this.setState({ guestData: response.data, loading: false });
       })
@@ -88,7 +87,10 @@ class MyComponent extends React.Component {
             <PotraitOfUseComponent data={missionData} />
             <GiftComponent />
             <FilterComponent />
-            <WishComponent data={wishData} />
+            <WishComponent
+              data={wishData}
+              invitationId={guestData.invitation_id}
+            />
             <FinishComponent />
           </div>
         )}
