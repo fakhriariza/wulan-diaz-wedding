@@ -411,7 +411,7 @@ body {
 
 .background_third {
   width: 412px;
-  height: 1850; /* Ensures full screen height */
+  height: 1850px; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -439,6 +439,46 @@ body {
   height: 494px;
   position: absolute;
   z-index: 3;
+}
+
+.kupu_kupu_atas {
+  position: absolute;
+  z-index: 100;
+  width: 80px;
+  height: auto;
+  top: 250px;
+  left: 20%;
+  transform: translateX(-50%);
+}
+
+.kupu_bawah {
+  position: absolute;
+  z-index: 100;
+  width: 80px;
+  height: auto;
+  top:480px;
+  left: calc(50% + 60px);
+  transform: translateX(-50%);
+}
+
+.kupu_kupu_atas_wulan {
+  position: absolute;
+  z-index: 100;
+  width: 80px;
+  height: auto;
+  top: 1080px;
+  left: 20%;
+  transform: translateX(-50%);
+}
+
+.kupu_bawah_wulan {
+  position: absolute;
+  z-index: 100;
+  width: 80px;
+  height: auto;
+  top: 1320px;
+  left: calc(50% + 60px);
+  transform: translateX(-50%);
 }
 
 .txt_wedding_of {

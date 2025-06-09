@@ -9,6 +9,8 @@ import cppPhoto from "./assets/page_third/diaz.png";
 import wayang from "./assets/page_third/wayang.png";
 import instagramLogo from "./assets/page_third/instagram_logo.png";
 import cpwPhoto from "./assets/page_third/wulan.png";
+import kupuAtas from "./assets/page_third/Orn-kupu-1-3.png";
+import kupuBawah from "./assets/page_third/Orn-kupu-2-3.png";
 
 class GroomBridesComponent extends React.Component {
   render() {
@@ -115,6 +117,22 @@ class GroomBridesComponent extends React.Component {
           />
           <img className="image_frame_lingkaran" src={frameLingkaran} />
 
+          {/* Kupu-Kupu Above the Frame */}
+          <MotionImage
+            className="kupu_kupu_atas"
+            src={kupuAtas}
+            animationType="fly"
+            initial={{ y: -30, opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+          />
+          <MotionImage
+            className="kupu_bawah"
+            src={kupuBawah}
+            animationType="fly"
+            initial={{ y: 30, opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+          />
+
           <div className="wayang">
             <MotionImage
               src={wayang}
@@ -184,6 +202,21 @@ class GroomBridesComponent extends React.Component {
             src={cpwPhoto}
           />
           <img className="image_frame_lingkaran" src={frameLingkaran} />
+          {/* Kupu-Kupu Above the Frame */}
+          <MotionImage
+            className="kupu_kupu_atas_wulan"
+            src={kupuAtas}
+            animationType="fly"
+            initial={{ y: -30, opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+          />
+          <MotionImage
+            className="kupu_bawah_wulan"
+            src={kupuBawah}
+            animationType="fly"
+            initial={{ y: 30, opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+          />
 
           <div className="wayang">
             <MotionImage
