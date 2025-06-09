@@ -1098,7 +1098,7 @@ h3 {
 .background_filter {
   padding-top: 32px;
   width: 412px;
-  height: 80vh; /* Ensures full screen height */
+  height: 90vh; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
