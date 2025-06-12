@@ -11,7 +11,17 @@ const EngagementFootageComponent = () => {
 
       <img className="img_footage" src={frame}></img>
 
-      <button className="download_button">Open Link</button>
+      <button
+        className="download_button"
+        onClick={() =>
+          window.open(
+            "https://www.instagram.com/reel/DCvV1ISTeu3/?igsh=MW05cGs0MXh0cmRueQ==",
+            "_blank"
+          )
+        }
+      >
+        Open Link
+      </button>
     </div>
   );
 };

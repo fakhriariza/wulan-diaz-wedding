@@ -1494,3 +1494,6 @@ h3 {
   width: 355px;
   height: 212px;
 }
+
+@media (max-width: 411px) {
+}
