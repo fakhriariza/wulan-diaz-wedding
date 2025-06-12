@@ -2,7 +2,7 @@
 .app-container {
   width: 412px;
   height: 100vh; /* Ensures full screen height */
-    min-height: 100vh;
+  min-height: 100vh;
   padding-bottom: 50px; /* Untuk menghindari elemen ketutupan nav bar HP */
   display: flex;
   flex-direction: column;
@@ -472,7 +472,7 @@ body {
   z-index: 100;
   width: 80px;
   height: auto;
-  top:480px;
+  top: 480px;
   left: calc(50% + 60px);
   transform: translateX(-50%);
 }
@@ -555,7 +555,7 @@ body {
   display: flex;
   align-items: center;
   text-decoration: none;
-   color: #623b48;
+  color: #623b48;
   cursor: pointer;
 }
 
@@ -570,7 +570,6 @@ body {
 .instagram_logo:hover {
   opacity: 0.8;
 }
-
 
 h3 {
   font-family: "Italianno", cursive;
@@ -782,7 +781,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0; 
+  margin-bottom: 0;
   padding-bottom: 0;
 }
 
@@ -1077,7 +1076,6 @@ h3 {
   padding-right: 9px;
   align-items: center;
   z-index: 10000;
-
 }
 
 .bank_second {
@@ -1085,7 +1083,7 @@ h3 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
- width: 304px;
+  width: 304px;
   height: 73px;
   background-color: #e9ddbb;
   margin-top: 13px;
@@ -1095,7 +1093,6 @@ h3 {
   padding-left: 9px;
   padding-right: 9px;
   z-index: 10000;
-
 }
 
 .logo {
@@ -1114,7 +1111,6 @@ h3 {
   font-weight: bold;
   font-style: italic;
   z-index: 10000;
-
 }
 
 .button_copy {
@@ -1130,16 +1126,16 @@ h3 {
 
   align-items: center;
   justify-content: center;
-  white-space: nowrap;             /* 🔒 menjaga agar teks 1 baris */
-  overflow: hidden;                /* 🔒 hindari overflow */
-  text-overflow: ellipsis;         /* 🔒 tampilkan ... jika terlalu panjang */
-  cursor: pointer;                 /* pointer saat hover */
+  white-space: nowrap; /* 🔒 menjaga agar teks 1 baris */
+  overflow: hidden; /* 🔒 hindari overflow */
+  text-overflow: ellipsis; /* 🔒 tampilkan ... jika terlalu panjang */
+  cursor: pointer; /* pointer saat hover */
   transition: transform 0.2s, background-color 0.2s;
 }
 
 .button_copy:hover {
-  background-color: #4f0a1c;       /* tetap, atau sesuaikan kalau ingin lebih terang */
-  transform: scale(1.05);          /* efek membesar */
+  background-color: #4f0a1c; /* tetap, atau sesuaikan kalau ingin lebih terang */
+  transform: scale(1.05); /* efek membesar */
 }
 
 .bunga_gift {
@@ -1222,11 +1218,10 @@ h3 {
   margin-top: 20px;
   z-index: 3;
   cursor: pointer;
-
 }
 .filter_button:hover {
   background-color: #4f0a1c; /* tetap sama */
-  transform: scale(1.05);    /* efek membesar sedikit */
+  transform: scale(1.05); /* efek membesar sedikit */
 }
 
 .bgfilter {
@@ -1253,7 +1248,7 @@ h3 {
 .background_wish {
   padding-top: 32px;
   width: 412px;
-  height: 100vh; /* Ensures full screen height */
+  height: fit-content; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1478,6 +1473,24 @@ h3 {
 
 .download_button:hover {
   background-color: #513738;
-  transform: scale(1.05);    /* efek membesar sedikit */
+  transform: scale(1.05); /* efek membesar sedikit */
+}
 
+.background_footage {
+  width: 412px;
+  height: 370px; /* Ensures full screen height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-image: url("assets/background.png");
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.img_footage {
+  width: 355px;
+  height: 212px;
 }

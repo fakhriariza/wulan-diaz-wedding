@@ -20,6 +20,7 @@ import FilterComponent from "./FilterComponent";
 import WishComponent from "./WishComponent";
 import FinishComponent from "./FinishComponent";
 import AudioPlayer from "./AudioPlayer";
+import EngagementFootageComponent from "./EngagementFootageComponent";
 
 class MyComponent extends React.Component {
   constructor(props) {
@@ -91,6 +92,7 @@ class MyComponent extends React.Component {
               data={wishData}
               invitationId={guestData.invitation_id}
             />
+            <EngagementFootageComponent />
             <FinishComponent />
           </div>
         )}
