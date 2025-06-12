@@ -19,7 +19,7 @@
 .app-container-finish {
   width: 412px;
   height: 80vh; /* Ensures full screen height */
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1478,7 +1478,7 @@ h3 {
 
 .background_footage {
   width: 412px;
-  height: 370px; /* Ensures full screen height */
+  height: fit-content; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1495,5 +1495,102 @@ h3 {
   height: 212px;
 }
 
-@media (max-width: 411px) {
+@media (max-width: 400px) {
+  .app-container {
+    max-width: 380px;
+    width: 100vw;
+  }
+
+  .audio-player {
+    max-width: 380px;
+    width: 100vw;
+  }
+
+  .background_sec {
+    max-width: 380px;
+    width: 100vw;
+  }
+
+  .background_third {
+    max-width: 380px;
+    width: 100vw;
+  }
+
+  .background_story {
+    max-width: 380px;
+    width: 100vw;
+    height: fit-content;
+    padding-bottom: 40px;
+  }
+
+  .background_fourth {
+    max-width: 380px;
+    width: 100vw;
+  }
+
+  .background_fifth {
+    max-width: 380px;
+    width: 100vw;
+  }
+
+  .gate_time {
+    width: 400px;
+    height: 490px;
+    left: 0;
+    right: 0;
+  }
+
+  .background_qr {
+    width: 100vw;
+    max-width: 380px;
+    height: fit-content;
+    padding-bottom: 40px;
+  }
+
+  .background_potrait {
+    width: 100vw;
+    max-width: 380px;
+    height: fit-content;
+  }
+
+  .background_gift {
+    width: 100vw;
+    max-width: 380px;
+    height: fit-content;
+  }
+
+  .bunga_gift {
+    top: 50%;
+  }
+
+  .background_filter {
+    width: 100vw;
+    max-width: 380px;
+    height: fit-content;
+  }
+
+  .background_wish {
+    width: 100vw;
+    max-width: 380px;
+  }
+
+  .background_footage {
+    width: 100vw;
+    max-width: 380px;
+    height: fit-content;
+  }
+
+  .app-container-finish {
+    width: 100vw;
+    max-width: 380px;
+    height: fit-content;
+  }
+
+  .guest-name {
+    top: 55%;
+  }
+
+  .open-invite-btn {
+    top: 70%;
+  }
 }
