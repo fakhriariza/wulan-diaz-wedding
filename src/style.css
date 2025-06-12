@@ -681,11 +681,11 @@ h3 {
 }
 
 .gate_time {
-  width: 481px;
+  width: 412px;
   height: 579px;
   position: absolute;
-  left: -30px;
-  right: 20px;
+  left: 0;
+  right: 0;
   z-index: 1;
 }
 
@@ -1534,8 +1534,8 @@ h3 {
   }
 
   .gate_time {
-    width: 400px;
-    height: 490px;
+    width: 380px;
+    height: 520px;
     left: 0;
     right: 0;
   }
