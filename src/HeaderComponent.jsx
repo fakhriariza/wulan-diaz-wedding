@@ -1,8 +1,11 @@
 import "./style.css";
 import "animate.css";
+import "yet-another-react-lightbox/styles.css";
 
 import React, { useRef, useEffect } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
+import CustomLightbox from "./CustomLightbox";
+
 import gate from "./assets/gate_wd.png";
 import montain from "./assets/mountain_wd.png";
 import janur from "./assets/janur.png";
@@ -106,11 +109,17 @@ const MotionImage = ({
 };
 
 class HeaderComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLightboxOpen: false,
+    };
+  }
   render() {
     const { guestData, onOpen, isOpened } = this.props;
     const guestName = guestData?.guest_name || null;
     const isWithPartner = guestData?.partner;
-
+    const images = [wulandiazopened];
     return (
       <div className="app-container">
         <div className="top-background animate__animated animate__fadeInDown animate__slower" />
@@ -249,10 +258,21 @@ class HeaderComponent extends React.Component {
         )}
 
         {isOpened && (
-          <img
-            src={wulandiazopened}
-            className="img_opened animate__animated animate__fadeInUp animate__delay-0.5s"
-          />
+          <>
+            <img
+              src={wulandiazopened}
+              onClick={() => this.setState({ isLightboxOpen: true })}
+              style={{ cursor: "pointer" }}
+              className="img_opened animate__animated animate__fadeInUp animate__delay-1s"
+            />
+            {this.state.isLightboxOpen && (
+              <CustomLightbox
+                open={true}
+                onClose={() => this.setState({ isLightboxOpen: false })}
+                images={images}
+              />
+            )}
+          </>
         )}
         <div className="bottom-background animate__animated animate__fadeInUp animate__slower" />
       </div>

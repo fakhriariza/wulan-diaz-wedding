@@ -98,13 +98,22 @@ body {
   top: 16.5%;
   transform: translateX(-50%);
 }
+/* Make lightbox container semi-dark with blur */
+.yarl__container {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(2px); /* optional */
+}
 
+/* Make carousel background slightly darker if needed */
+.yarl__carousel {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
 .img_opened {
   position: absolute;
   z-index: 6;
-  height: 330px;
-  width: 227px;
-  top: 35%;
+  height: 400px;
+  width: 280px;
+  top: 33%;
   transform: translateX(-50%);
 }
 

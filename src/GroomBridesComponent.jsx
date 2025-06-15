@@ -2,6 +2,7 @@ import "./style.css";
 import "animate.css";
 import React, { useRef, useEffect } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
+import CustomLightbox from "./CustomLightbox";
 
 import frameBelakang from "./assets/page_third/frame_belakang.png";
 import frameLingkaran from "./assets/page_third/frame_lingkaran.png";
@@ -13,6 +14,14 @@ import kupuAtas from "./assets/page_third/Orn-kupu-1-3.png";
 import kupuBawah from "./assets/page_third/Orn-kupu-2-3.png";
 
 class GroomBridesComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLightboxOpen: false,
+      lightboxImages: [],
+      lightboxIndex: 0,
+    };
+  }
   render() {
     const MotionImage = ({
       src,
@@ -73,6 +82,7 @@ class GroomBridesComponent extends React.Component {
         />
       );
     };
+    const images = [cppPhoto, cpwPhoto];
 
     return (
       <div className="background_third">
@@ -114,8 +124,27 @@ class GroomBridesComponent extends React.Component {
             initial={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
+            style={{ cursor: "pointer" }}
+            onClick={() =>
+              this.setState({
+                isLightboxOpen: true,
+                lightboxImages: [cppPhoto, cpwPhoto],
+                lightboxIndex: 0,
+              })
+            }
           />
-          <img className="image_frame_lingkaran" src={frameLingkaran} />
+          <img
+            style={{ cursor: "pointer" }}
+            onClick={() =>
+              this.setState({
+                isLightboxOpen: true,
+                lightboxImages: [cppPhoto, cpwPhoto],
+                lightboxIndex: 0,
+              })
+            }
+            className="image_frame_lingkaran"
+            src={frameLingkaran}
+          />
 
           {/* Kupu-Kupu Above the Frame */}
           <MotionImage
@@ -200,8 +229,28 @@ class GroomBridesComponent extends React.Component {
             transition={{ duration: 1 }}
             className="cpp_photo"
             src={cpwPhoto}
+            style={{ cursor: "pointer" }}
+            onClick={() =>
+              this.setState({
+                isLightboxOpen: true,
+                lightboxImages: [cppPhoto, cpwPhoto],
+                lightboxIndex: 1,
+              })
+            }
           />
-          <img className="image_frame_lingkaran" src={frameLingkaran} />
+          <img
+            style={{ cursor: "pointer" }}
+            onClick={() =>
+              this.setState({
+                isLightboxOpen: true,
+                lightboxImages: [cppPhoto, cpwPhoto],
+                lightboxIndex: 1,
+              })
+            }
+            className="image_frame_lingkaran"
+            src={frameLingkaran}
+          />
+
           {/* Kupu-Kupu Above the Frame */}
           <MotionImage
             className="kupu_kupu_atas_wulan"
@@ -265,6 +314,14 @@ class GroomBridesComponent extends React.Component {
           <img src={instagramLogo} className="instagram_logo" />
           <h3>@wulanasrr</h3>
         </a>
+        {this.state.isLightboxOpen && (
+          <CustomLightbox
+            open={true}
+            onClose={() => this.setState({ isLightboxOpen: false })}
+            images={this.state.lightboxImages}
+            index={this.state.lightboxIndex}
+          />
+        )}
       </div>
     );
   }
