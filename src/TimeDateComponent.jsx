@@ -85,7 +85,7 @@ class TimeDataComponent extends React.Component {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
           >
-            Saturday <br /> 5 July <br /> 2025
+            Saturday <br /> 5<sup>th</sup> July <br /> 2025
           </motion.h3>
 
           <motion.img
@@ -114,6 +114,15 @@ class TimeDataComponent extends React.Component {
         >
           {this.state.countdownText}
         </motion.p>
+
+        <a
+          href="https://calendar.app.google/viJ6LYzmpr49QrsB8"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="add_invitation_button"
+        >
+          Add to Calendar
+        </a>
       </div>
     );
   }
