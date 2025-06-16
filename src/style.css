@@ -952,7 +952,7 @@ h3 {
 
 .background_potrait {
   width: 412px;
-  height: 75vh; /* Ensures full screen height */
+  height: fit-content; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1157,9 +1157,9 @@ h3 {
 }
 
 .background_filter {
-  padding-top: 32px;
+  padding-top: 20px;
   width: 412px;
-  height: 90vh; /* Ensures full screen height */
+  height: fit-content; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1168,6 +1168,7 @@ h3 {
   background-size: cover;
   background-position: center;
   z-index: 1;
+  padding-bottom: 20px;
 }
 
 .title_filter {
