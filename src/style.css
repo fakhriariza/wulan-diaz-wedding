@@ -1602,4 +1602,246 @@ h3 {
   .open-invite-btn {
     top: 70%;
   }
+
+  .img_gate {
+    position: absolute;
+    z-index: 5;
+    height: 579px;
+    width: 481px;
+    top: 5%;
+    transform: translateX(-50%);
+  }
+
+  .img_mountain {
+    position: absolute;
+    z-index: 2;
+    height: 522px;
+    width: 782px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.5;
+  }
+
+  .img_janur {
+    position: absolute;
+    z-index: 6;
+    height: 404px;
+    width: 397px;
+    top: 14%;
+    transform: translateX(-50%);
+  }
+
+  .img_logo {
+    position: absolute;
+    z-index: 1000;
+    height: 34px;
+    width: 32px;
+    top: 16.5%;
+    transform: translateX(-50%);
+  }
+  /* Make lightbox container semi-dark with blur */
+  .yarl__container {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(2px); /* optional */
+  }
+
+  /* Make carousel background slightly darker if needed */
+  .yarl__carousel {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+  }
+  .img_opened {
+    position: absolute;
+    z-index: 6;
+    height: 400px;
+    width: 280px;
+    top: 33%;
+    transform: translateX(-50%);
+  }
+
+  .bunga_kiri {
+    z-index: 6;
+  }
+
+  .img_bunga3 {
+    position: absolute;
+    z-index: 3;
+    height: 313px;
+    width: 180px;
+    top: 40%;
+    left: 0%;
+    transform: translateX(-50%);
+  }
+
+  .img_bunga2 {
+    position: absolute;
+    z-index: 4;
+    height: 244px;
+    width: 180px;
+    top: 52%;
+    left: 0%;
+    transform: translateX(-50%);
+  }
+
+  .img_bunga4 {
+    position: absolute;
+    z-index: 4;
+    height: 242px;
+    width: 137px;
+    top: 68%;
+    left: 0%;
+    transform: translateX(-50%);
+  }
+
+  .img_bunga1 {
+    position: absolute;
+    z-index: 5;
+    height: 111px;
+    width: 85px;
+    top: 72%;
+    left: 0%;
+    transform: translateX(-50%);
+  }
+
+  .bunga_kanan {
+    z-index: 6;
+  }
+
+  .img_bungapink_kanan {
+    position: absolute;
+    z-index: 1;
+    height: 347px;
+    width: 200px;
+    top: 40%;
+    right: -10%;
+  }
+
+  .img_pohonijo_kanan {
+    position: absolute;
+    z-index: 4;
+    height: 244px;
+    width: 180px;
+    top: 52%;
+    right: -10%;
+  }
+
+  .img_padikapas_kanan {
+    position: absolute;
+    z-index: 5;
+    height: 244px;
+    width: 137px;
+    top: 68%;
+    right: 0%;
+  }
+
+  .img_tanaman_kanan {
+    position: absolute;
+    z-index: 5;
+    height: 122px;
+    width: 77px;
+    top: 72%;
+    right: 10%;
+  }
+
+  .img_bungabawah_kanan {
+    position: absolute;
+    z-index: 5;
+    height: 111px;
+    width: 82px;
+    top: 72%;
+    right: 0%;
+  }
+
+  .img_merak {
+    position: absolute;
+    z-index: 7;
+    height: 159px;
+    width: 212px;
+    top: 68%;
+    left: 10%;
+  }
+
+  .img_kupu2 {
+    position: absolute;
+    z-index: 100;
+    height: 48px;
+    width: 61px;
+    top: 40%;
+    left: 10%;
+    z-index: 7;
+  }
+
+  .img_kupu1 {
+    position: absolute;
+    z-index: 100;
+    height: 61px;
+    width: 59px;
+    top: 50%;
+    z-index: 7;
+    right: 20%;
+  }
+
+  .title {
+    position: absolute;
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    text-align: center;
+    z-index: 1000;
+    top: 27%;
+    color: #513738;
+  }
+
+  .title-opened {
+    position: absolute;
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    text-align: center;
+    z-index: 1000;
+    top: 27%;
+    color: #513738;
+  }
+  .title-theweddingof-opened {
+    position: absolute;
+    font-family: "Wittgenstein";
+    font-style: initial;
+    font-size: 18px;
+    text-align: center;
+    z-index: 1000;
+    top: 27%;
+    color: #513738;
+  }
+
+  .guest-name {
+    position: absolute;
+    font-family: "Wittgenstein";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center; /* Centers the text within the element */
+    z-index: 1000;
+    top: 50%;
+    width: 200px;
+    height: 40px;
+    color: #513738;
+  }
+
+  .open-invite-btn {
+    position: absolute;
+    bottom: 40px;
+    top: 63%;
+    width: 200px;
+    height: 40px;
+    font-family: "Wittgenstein";
+    background-color: #4f0a1c;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    z-index: 10;
+  }
 }
