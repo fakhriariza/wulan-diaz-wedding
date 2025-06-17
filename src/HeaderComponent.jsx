@@ -25,6 +25,8 @@ import kupu1 from "./assets/kupu1.png";
 import kupu2 from "./assets/kupu2.png";
 import logo from "./assets/Wulan_&_Diaz_logo.png";
 import wulandiazopened from "./assets/wulandiazopenedimage.png";
+import bungaataskiri from "./assets/page_sixth/bungataskiri.png";
+import bungaataskanan from "./assets/page_sixth/bungataskanan.png";
 
 const fadeIn = (direction = "up", delay = 0) => {
   const variants = {
@@ -124,7 +126,17 @@ class HeaderComponent extends React.Component {
       <div className="app-container">
         <div className="top-background animate__animated animate__fadeInDown animate__slower" />
 
-        {/* images */}
+        <MotionImage
+          className="bungataskiri_head"
+          src={bungaataskiri}
+          animationType="sway"
+        />
+        <MotionImage
+          className="bungaataskanan_head"
+          src={bungaataskanan}
+          animationType="sway"
+        />
+
         <img
           src={gate}
           className="img_gate animate__animated animate__fadeInUp animate__delay-0.5s"
