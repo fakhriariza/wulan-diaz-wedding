@@ -19,15 +19,15 @@ import fotoPotrait8 from "./assets/fotopotrait9.JPEG";
 import fotoPotrait9 from "./assets/fotopotrait10.jpeg";
 import fotoPotrait12 from "./assets/fotopotrait12.JPEG";
 import fotoPotrait13 from "./assets/fotopotrait13.JPEG";
-import fotoPotrait14 from "./assets/fotopotrait14.jpg";
-import fotoPotrait15 from "./assets/fotopotrait15.JPEG";
-import fotoPotrait16 from "./assets/fotopotrait16.JPEG";
-import fotoPotrait17 from "./assets/fotopotrait17.JPEG";
-import fotoPotrait18 from "./assets/fotopotrait18.JPEG";
-import fotoPotrait19 from "./assets/fotopotrait19.jpg";
-import fotoPotrait20 from "./assets/fotopotrait20.JPEG";
-import fotoPotrait21 from "./assets/fotopotrait21.JPEG";
-import fotoPotrait22 from "./assets/fotopotrait22.JPEG";
+// import fotoPotrait14 from "./assets/fotopotrait14.jpg";
+// import fotoPotrait15 from "./assets/fotopotrait15.JPEG";
+// import fotoPotrait16 from "./assets/fotopotrait16.JPEG";
+// import fotoPotrait17 from "./assets/fotopotrait17.JPEG";
+// import fotoPotrait18 from "./assets/fotopotrait18.JPEG";
+// import fotoPotrait19 from "./assets/fotopotrait19.jpg";
+// import fotoPotrait20 from "./assets/fotopotrait20.JPEG";
+// import fotoPotrait21 from "./assets/fotopotrait21.JPEG";
+// import fotoPotrait22 from "./assets/fotopotrait22.JPEG";
 
 function PotraitOfUseComponent() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
