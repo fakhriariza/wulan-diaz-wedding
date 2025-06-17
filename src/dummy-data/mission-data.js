@@ -5,7 +5,7 @@ const getMissionData = () => [
     body: "“We met—two strangers stepping into the same lecture hall, unaware that something special was about to begin. At first, it was just light conversations between classes, a few laughs, casual hellos. Life eventually took us on different paths... but fate? Oh, it had its own plans.”",
     createdAt: "2022-04-14T04:27:34.572Z",
     image:
-      "https://blogger.googleuserconteyangnt.com/img/a/AVvXsEgaLcAhs_cVy5DkGG8EczF92QTWPZmxcux3rGOuKVTfiLsdTSJQdzj3NjoTDC9t4UwDbqRtSXAg3Cs70fSUWR071QektP9Q8cQ3r5KkIJYc8T4cOLe6C-O_ge73K_2AgTKKJ2V1pX8F-0TVYG2DkF_r6zGPglLs5nEW2Hrj9OujZdqXuLAJnnzsOMAWnm4",
+      "https://res.cloudinary.com/dqvm5dax5/image/upload/v1750179114/IMG_2041_jcjrmw.jpg",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const getMissionData = () => [
     body: "“We grew closer—sometimes through deep talks, sometimes just by binge-watching series until one of us fell asleep. We also made our first couple manifest: one day, we’d watch Rex Orange County live together.”",
     createdAt: "2022-04-14T04:27:34.572Z",
     image:
-      "https://blogger.googleusercontent.com/img/a/AVvXsEj-xHqrjh-gYXbmMVAMFZK5Uf5tkZ7-7FbrnrF8vTeBcvX8n9VsyKYUScApw47kLj3iDNDh_3bxxOwuxdUGWyCsRxGQhwy7aZ_Ypw0F8Esv_-v6BF8OQj67ePNe3voXfogEKHNxP3CnpAmKGvf0ILyk-bdgM9G3l60kBDcLOH49iCav4oDOWwhlqTQDxR0",
+      "https://res.cloudinary.com/dqvm5dax5/image/upload/v1750179127/Group_137_3_unjzzf.png",
   },
   {
     id: 4,
