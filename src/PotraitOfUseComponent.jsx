@@ -18,7 +18,16 @@ import fotoPotrait7 from "./assets/fotopotrait8.JPEG";
 import fotoPotrait8 from "./assets/fotopotrait9.JPEG";
 import fotoPotrait9 from "./assets/fotopotrait10.jpeg";
 import fotoPotrait12 from "./assets/fotopotrait12.JPEG";
-import fotoPotrait13 from "./assets/fotopotrait13.jpg";
+import fotoPotrait13 from "./assets/fotopotrait13.JPEG";
+// import fotoPotrait14 from "./assets/fotopotrait14.jpg";
+// import fotoPotrait15 from "./assets/fotopotrait15.JPEG";
+// import fotoPotrait16 from "./assets/fotopotrait16.JPEG";
+// import fotoPotrait17 from "./assets/fotopotrait17.JPEG";
+// import fotoPotrait18 from "./assets/fotopotrait18.JPEG";
+// import fotoPotrait19 from "./assets/fotopotrait19.jpg";
+// import fotoPotrait20 from "./assets/fotopotrait20.JPEG";
+// import fotoPotrait21 from "./assets/fotopotrait21.JPEG";
+// import fotoPotrait22 from "./assets/fotopotrait22.JPEG";
 
 function PotraitOfUseComponent() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -69,6 +78,24 @@ function PotraitOfUseComponent() {
         <div onClick={() => openLightbox(fotoPotrait13)}>
           <img src={fotoPotrait13} alt="" />
         </div>
+        {/* <div onClick={() => openLightbox(fotoPotrait14)}>
+          <img src={fotoPotrait14} alt="" />
+        </div>
+        <div onClick={() => openLightbox(fotoPotrait15)}>
+          <img src={fotoPotrait15} alt="" />
+        </div>
+        <div onClick={() => openLightbox(fotoPotrait16)}>
+          <img src={fotoPotrait16} alt="" />
+        </div>
+        <div onClick={() => openLightbox(fotoPotrait17)}>
+          <img src={fotoPotrait17} alt="" />
+        </div>
+        <div onClick={() => openLightbox(fotoPotrait18)}>
+          <img src={fotoPotrait18} alt="" />
+        </div>
+        <div onClick={() => openLightbox(fotoPotrait19)}>
+          <img src={fotoPotrait19} alt="" />
+        </div> */}
       </Carousel>
 
       {/* Lightbox Modal */}
