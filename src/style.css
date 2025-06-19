@@ -65,7 +65,7 @@ body {
   z-index: 5;
   height: 579px;
   width: 481px;
-  top: 10%;
+  top: 13%;
   transform: translateX(-50%);
 }
 
@@ -75,7 +75,7 @@ body {
   height: 522px;
   width: 782px;
   top: 15%;
-  left: 50%;
+  left: 53%;
   transform: translateX(-50%);
   opacity: 0.5;
 }
@@ -85,7 +85,7 @@ body {
   z-index: 6;
   height: 404px;
   width: 397px;
-  top: 19%;
+  top: 22%;
   transform: translateX(-50%);
 }
 
@@ -94,7 +94,7 @@ body {
   z-index: 1000;
   height: 34px;
   width: 32px;
-  top: 21.5%;
+  top: 24.5%;
   transform: translateX(-50%);
 }
 /* Make lightbox container semi-dark with blur */
@@ -112,7 +112,7 @@ body {
   z-index: 6;
   height: 400px;
   width: 280px;
-  top: 38%;
+  top: 41%;
   transform: translateX(-50%);
 }
 
@@ -125,7 +125,7 @@ body {
   z-index: 3;
   height: 313px;
   width: 180px;
-  top: 45%;
+  top: 48%;
   left: 0%;
   transform: translateX(-50%);
 }
@@ -135,7 +135,7 @@ body {
   z-index: 4;
   height: 244px;
   width: 180px;
-  top: 57%;
+  top: 60%;
   left: 0%;
   transform: translateX(-50%);
 }
@@ -145,7 +145,7 @@ body {
   z-index: 4;
   height: 242px;
   width: 137px;
-  top: 63%;
+  top: 66%;
   left: 0%;
   transform: translateX(-50%);
 }
@@ -155,7 +155,7 @@ body {
   z-index: 5;
   height: 111px;
   width: 85px;
-  top: 77%;
+  top: 80%;
   left: 0%;
   transform: translateX(-50%);
 }
@@ -169,7 +169,7 @@ body {
   z-index: 1;
   height: 347px;
   width: 200px;
-  top: 45%;
+  top: 48%;
   right: -10%;
 }
 
@@ -178,7 +178,7 @@ body {
   z-index: 4;
   height: 244px;
   width: 180px;
-  top: 57%;
+  top: 60%;
   right: -10%;
 }
 
@@ -187,7 +187,7 @@ body {
   z-index: 5;
   height: 244px;
   width: 137px;
-  top: 63%;
+  top: 66%;
   right: 0%;
 }
 
@@ -196,7 +196,7 @@ body {
   z-index: 5;
   height: 122px;
   width: 77px;
-  top: 77%;
+  top: 80%;
   right: 10%;
 }
 
@@ -205,7 +205,7 @@ body {
   z-index: 5;
   height: 111px;
   width: 82px;
-  top: 77%;
+  top: 80%;
   right: 0%;
 }
 
@@ -214,7 +214,7 @@ body {
   z-index: 7;
   height: 159px;
   width: 212px;
-  top: 73%;
+  top: 76%;
   left: 10%;
 }
 
@@ -223,7 +223,7 @@ body {
   z-index: 100;
   height: 48px;
   width: 61px;
-  top: 45%;
+  top: 48%;
   left: 10%;
   z-index: 7;
 }
@@ -233,7 +233,7 @@ body {
   z-index: 100;
   height: 61px;
   width: 59px;
-  top: 55%;
+  top: 58%;
   z-index: 7;
   right: 20%;
 }
@@ -246,7 +246,7 @@ body {
   font-size: 48px;
   text-align: center;
   z-index: 1000;
-  top: 32%;
+  top: 35%;
   color: #513738;
 }
 
@@ -258,7 +258,7 @@ body {
   font-size: 48px;
   text-align: center;
   z-index: 1000;
-  top: 31%;
+  top: 34%;
   color: #513738;
 }
 .title-theweddingof-opened {
@@ -268,7 +268,7 @@ body {
   font-size: 18px;
   text-align: center;
   z-index: 1000;
-  top: 28%;
+  top: 31%;
   color: #513738;
 }
 
@@ -280,7 +280,7 @@ body {
   font-size: 20px;
   text-align: center; /* Centers the text within the element */
   z-index: 1000;
-  top: 55%;
+  top: 58%;
   width: 200px;
   height: 40px;
   color: #513738;
@@ -289,7 +289,7 @@ body {
 .open-invite-btn {
   position: absolute;
   bottom: 40px;
-  top: 68%;
+  top: 71%;
   width: 200px;
   height: 40px;
   font-family: "Wittgenstein";
@@ -958,6 +958,7 @@ h3 {
   height: 165px;
   width: 150px;
   right: 0;
+  top: 0;
 }
 
 .bgstory {
@@ -1527,6 +1528,24 @@ h3 {
   height: 212px;
 }
 
+.bungaataskanan_head {
+  position: absolute !important;
+  z-index: 5 !important;
+  height: 165px !important;
+  width: 150px !important;
+  right: 0 !important;
+  top: 0 !important;
+}
+
+.bungataskiri_head {
+  position: absolute;
+  z-index: 5;
+  height: 165px;
+  width: 150px;
+  left: 0;
+  top: 0;
+}
+
 @media (max-width: 400px) {
   .app-container {
     max-width: 380px;
@@ -1721,7 +1740,7 @@ h3 {
     z-index: 5;
     height: 111px;
     width: 85px;
-    top: 72%;
+    top: 82%;
     left: 0%;
     transform: translateX(-50%);
   }
@@ -1771,7 +1790,7 @@ h3 {
     z-index: 5;
     height: 111px;
     width: 82px;
-    top: 72%;
+    top: 82%;
     right: 0%;
   }
 
@@ -1867,4 +1886,13 @@ h3 {
     cursor: pointer;
     z-index: 10;
   }
+
+  /* .bungataskiri {
+    position: absolute;
+    z-index: 5;
+    height: 165px;
+    width: 150px;
+    left: 0;
+    top: 0;
+  } */
 }
