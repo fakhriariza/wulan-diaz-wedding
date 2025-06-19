@@ -990,6 +990,7 @@ h3 {
 }
 
 .carousel .thumb {
+  
   border: 0 !important;
   border-radius: 25px;
   height: 129px;
@@ -1000,6 +1001,7 @@ h3 {
 }
 
 .carousel .thumb img {
+    cursor: pointer;
   height: 100%;
   width: 100%;
   object-fit: cover;
