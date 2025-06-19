@@ -19,22 +19,42 @@ import fotoPotrait8 from "./assets/fotopotrait9.JPEG";
 import fotoPotrait9 from "./assets/fotopotrait10.jpeg";
 import fotoPotrait12 from "./assets/fotopotrait12.JPEG";
 import fotoPotrait13 from "./assets/fotopotrait13.JPEG";
-// import fotoPotrait14 from "./assets/fotopotrait14.jpg";
-// import fotoPotrait15 from "./assets/fotopotrait15.JPEG";
-// import fotoPotrait16 from "./assets/fotopotrait16.JPEG";
-// import fotoPotrait17 from "./assets/fotopotrait17.JPEG";
-// import fotoPotrait18 from "./assets/fotopotrait18.JPEG";
-// import fotoPotrait19 from "./assets/fotopotrait19.jpg";
-// import fotoPotrait20 from "./assets/fotopotrait20.JPEG";
-// import fotoPotrait21 from "./assets/fotopotrait21.JPEG";
-// import fotoPotrait22 from "./assets/fotopotrait22.JPEG";
+import fotoPotrait14 from "./assets/fotopotrait14.jpg";
+import fotoPotrait15 from "./assets/fotopotrait15.jpg";
+import fotoPotrait16 from "./assets/fotopotrait16.jpg";
+import fotoPotrait17 from "./assets/fotopotrait17.jpg";
+import fotoPotrait18 from "./assets/fotopotrait18.jpg";
+import fotoPotrait19 from "./assets/fotopotrait19.JPEG";
+import fotoPotrait20 from "./assets/fotopotrait20.JPEG";
+
+const allImages = [
+  fotoPotrait1,
+  fotoPotrait10,
+  fotoPotrait2,
+  fotoPotrait3,
+  fotoPotrait4,
+  fotoPotrait5,
+  fotoPotrait6,
+  fotoPotrait7,
+  fotoPotrait8,
+  fotoPotrait9,
+  fotoPotrait12,
+  fotoPotrait13,
+  fotoPotrait14,
+  fotoPotrait15,
+  fotoPotrait16,
+  fotoPotrait17,
+  fotoPotrait18,
+  fotoPotrait19,
+  fotoPotrait20,
+];
 
 function PotraitOfUseComponent() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
-  const openLightbox = (image) => {
-    setSelectedImage(image);
+  const openLightbox = (index) => {
+    setSelectedIndex(index);
     setLightboxOpen(true);
   };
 
@@ -42,67 +62,72 @@ function PotraitOfUseComponent() {
     <div className="background_potrait">
       <h2 className="txt_potrait">Portrait of Us</h2>
       <Carousel autoPlay interval="3000" transitionTime="1000" infiniteLoop>
-        <div onClick={() => openLightbox(fotoPotrait1)}>
+        <div onClick={() => openLightbox(0)}>
           <img src={fotoPotrait1} alt="" />
         </div>
-        <div onClick={() => openLightbox(fotoPotrait10)}>
+        <div onClick={() => openLightbox(1)}>
           <img className="fotodiazwulan" src={fotoPotrait10} alt="" />
         </div>
-        <div onClick={() => openLightbox(fotoPotrait2)}>
-          <img src={fotoPotrait2} alt="" />
-        </div>
-        <div onClick={() => openLightbox(fotoPotrait3)}>
-          <img src={fotoPotrait3} alt="" />
-        </div>
-        <div onClick={() => openLightbox(fotoPotrait4)}>
-          <img src={fotoPotrait4} alt="" />
-        </div>
-        <div onClick={() => openLightbox(fotoPotrait5)}>
-          <img src={fotoPotrait5} alt="" />
-        </div>
-        <div onClick={() => openLightbox(fotoPotrait6)}>
-          <img src={fotoPotrait6} alt="" />
-        </div>
-        <div onClick={() => openLightbox(fotoPotrait7)}>
-          <img src={fotoPotrait7} alt="" />
-        </div>
-        <div onClick={() => openLightbox(fotoPotrait8)}>
-          <img src={fotoPotrait8} alt="" />
-        </div>
-        <div onClick={() => openLightbox(fotoPotrait9)}>
-          <img src={fotoPotrait9} alt="" />
-        </div>
-        <div onClick={() => openLightbox(fotoPotrait12)}>
-          <img src={fotoPotrait12} alt="" />
-        </div>
-        <div onClick={() => openLightbox(fotoPotrait13)}>
-          <img src={fotoPotrait13} alt="" />
-        </div>
-        {/* <div onClick={() => openLightbox(fotoPotrait14)}>
-          <img src={fotoPotrait14} alt="" />
-        </div>
-        <div onClick={() => openLightbox(fotoPotrait15)}>
+        <div onClick={() => openLightbox(13)}>
           <img src={fotoPotrait15} alt="" />
         </div>
-        <div onClick={() => openLightbox(fotoPotrait16)}>
-          <img src={fotoPotrait16} alt="" />
+        <div onClick={() => openLightbox(2)}>
+          <img src={fotoPotrait2} alt="" />
         </div>
-        <div onClick={() => openLightbox(fotoPotrait17)}>
-          <img src={fotoPotrait17} alt="" />
+        <div onClick={() => openLightbox(3)}>
+          <img src={fotoPotrait3} alt="" />
         </div>
-        <div onClick={() => openLightbox(fotoPotrait18)}>
+        <div onClick={() => openLightbox(16)}>
           <img src={fotoPotrait18} alt="" />
         </div>
-        <div onClick={() => openLightbox(fotoPotrait19)}>
+        <div onClick={() => openLightbox(4)}>
+          <img src={fotoPotrait4} alt="" />
+        </div>
+        <div onClick={() => openLightbox(5)}>
+          <img src={fotoPotrait5} alt="" />
+        </div>
+        <div onClick={() => openLightbox(18)}>
+          <img src={fotoPotrait20} alt="" />
+        </div>
+        <div onClick={() => openLightbox(6)}>
+          <img src={fotoPotrait6} alt="" />
+        </div>
+        <div onClick={() => openLightbox(7)}>
+          <img src={fotoPotrait7} alt="" />
+        </div>
+        <div onClick={() => openLightbox(15)}>
+          <img src={fotoPotrait17} alt="" />
+        </div>
+        <div onClick={() => openLightbox(8)}>
+          <img src={fotoPotrait8} alt="" />
+        </div>
+        <div onClick={() => openLightbox(9)}>
+          <img src={fotoPotrait9} alt="" />
+        </div>
+        <div onClick={() => openLightbox(17)}>
           <img src={fotoPotrait19} alt="" />
-        </div> */}
+        </div>
+        <div onClick={() => openLightbox(10)}>
+          <img src={fotoPotrait12} alt="" />
+        </div>
+        <div onClick={() => openLightbox(11)}>
+          <img src={fotoPotrait13} alt="" />
+        </div>
+        <div onClick={() => openLightbox(12)}>
+          <img src={fotoPotrait14} alt="" />
+        </div>
+
+        <div onClick={() => openLightbox(14)}>
+          <img src={fotoPotrait16} alt="" />
+        </div>
       </Carousel>
 
       {/* Lightbox Modal */}
       {lightboxOpen && (
         <CustomLightbox
           open={true}
-          images={[selectedImage]} // only single image, as per your request
+          images={allImages} // only single image, as per your request
+          index={selectedIndex}
           onClose={() => setLightboxOpen(false)}
         />
       )}
