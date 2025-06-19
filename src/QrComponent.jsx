@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import QRCode from "qrcode";
 import "./style.css";
+import { motion, useInView } from "framer-motion";
 
 const QrComponent = ({ invitationId }) => {
   const [qrDataUrl, setQrDataUrl] = useState(null);
@@ -32,8 +33,14 @@ const QrComponent = ({ invitationId }) => {
 
   return (
     <div className="background_qr animate__animated animate__fadeIn">
-      <h1 className="title_qr">Digital Appointment QR Code</h1>
-
+      <motion.h1
+        className="title_wish"
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+      >
+        Digital Appointment QR Code
+      </motion.h1>
       {qrDataUrl && <img src={qrDataUrl} alt="QR Code" className="qr_code" />}
 
       <p className="desc_qr">

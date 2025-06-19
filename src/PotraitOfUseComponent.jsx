@@ -5,6 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import React, { useState } from "react";
 import CustomLightbox from "./CustomLightbox"; // ✅ import this
+import { motion, useInView } from "framer-motion";
 
 // Assets
 import fotoPotrait1 from "./assets/fotopotrait1.JPEG";
@@ -26,6 +27,7 @@ import fotoPotrait17 from "./assets/fotopotrait17.jpg";
 import fotoPotrait18 from "./assets/fotopotrait18.jpg";
 import fotoPotrait19 from "./assets/fotopotrait19.JPEG";
 import fotoPotrait20 from "./assets/fotopotrait20.JPEG";
+import fotoPotrait21 from "./assets/fotopotrait21.JPEG";
 
 const allImages = [
   fotoPotrait1,
@@ -47,6 +49,7 @@ const allImages = [
   fotoPotrait18,
   fotoPotrait19,
   fotoPotrait20,
+  fotoPotrait21,
 ];
 
 function PotraitOfUseComponent() {
@@ -60,7 +63,14 @@ function PotraitOfUseComponent() {
 
   return (
     <div className="background_potrait">
-      <h2 className="txt_potrait">Portrait of Us</h2>
+      <motion.h1
+        className="txt_potrait"
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+      >
+        Portrait of Us
+      </motion.h1>
       <Carousel autoPlay interval="3000" transitionTime="1000" infiniteLoop>
         <div onClick={() => openLightbox(0)}>
           <img src={fotoPotrait1} alt="" />
@@ -109,6 +119,9 @@ function PotraitOfUseComponent() {
         </div>
         <div onClick={() => openLightbox(10)}>
           <img src={fotoPotrait12} alt="" />
+        </div>
+        <div onClick={() => openLightbox(15)}>
+          <img src={fotoPotrait21} alt="" />
         </div>
         <div onClick={() => openLightbox(11)}>
           <img src={fotoPotrait13} alt="" />
