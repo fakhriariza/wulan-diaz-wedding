@@ -12,6 +12,7 @@ import instagramLogo from "./assets/page_third/instagram_logo.png";
 import cpwPhoto from "./assets/page_third/wulan.png";
 import kupuAtas from "./assets/page_third/Orn-kupu-1-3.png";
 import kupuBawah from "./assets/page_third/Orn-kupu-2-3.png";
+import bungaBawahFrame from "./assets/page_third/bungaBawahFrame.png";
 
 class GroomBridesComponent extends React.Component {
   constructor(props) {
@@ -119,6 +120,14 @@ class GroomBridesComponent extends React.Component {
             transition={{ duration: 1 }}
           />
           <MotionImage
+            className="bunga_bawah_frame"
+            src={bungaBawahFrame}
+            animationType="bounce"
+            initial={{ x: 50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+          />
+          <MotionImage
             className="cpp_photo"
             src={cppPhoto}
             initial={{ x: -50, opacity: 0 }}
@@ -218,6 +227,14 @@ class GroomBridesComponent extends React.Component {
           <MotionImage
             className="image_bg_lingkaran"
             src={frameBelakang}
+            animationType="bounce"
+            initial={{ x: 50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+          />
+          <MotionImage
+            className="bunga_bawah_frame_wulan"
+            src={bungaBawahFrame}
             animationType="bounce"
             initial={{ x: 50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}

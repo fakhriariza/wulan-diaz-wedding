@@ -435,7 +435,7 @@ body {
 
 .background_third {
   width: 412px;
-  height: 1850px; /* Ensures full screen height */
+  height: 1550px; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -449,12 +449,12 @@ body {
 .background_cpp {
   display: flex;
   justify-content: center;
-  margin-bottom: 180px;
+  margin-bottom: 20px;
 }
 
 .image_bg_lingkaran {
-  width: 480px;
-  height: 642px;
+  width: 440px;
+  height: 500px;
   position: absolute;
 }
 
@@ -480,7 +480,7 @@ body {
   z-index: 100;
   width: 80px;
   height: auto;
-  top: 480px;
+  top: 490px;
   left: calc(50% + 60px);
   transform: translateX(-50%);
 }
@@ -490,7 +490,7 @@ body {
   z-index: 100;
   width: 80px;
   height: auto;
-  top: 1080px;
+  top: 900px;
   left: 20%;
   transform: translateX(-50%);
 }
@@ -500,7 +500,7 @@ body {
   z-index: 100;
   width: 80px;
   height: auto;
-  top: 1320px;
+  top: 1160px;
   left: calc(50% + 60px);
   transform: translateX(-50%);
 }
@@ -521,7 +521,22 @@ body {
   z-index: 2;
   margin-top: 90px;
 }
-
+.bunga_bawah_frame {
+   position: absolute;
+  z-index: 100;
+  top: 510px;
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
+.bunga_bawah_frame_wulan {
+   position: absolute;
+  z-index: 100;
+  top: 1180px;
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
 .wayang {
   display: flex;
   flex-direction: row;
@@ -592,7 +607,7 @@ h3 {
 .background_cpw {
   display: flex;
   justify-content: center;
-  margin-bottom: 180px;
+  margin-bottom: 20px;
   margin-top: 20px;
 }
 
@@ -922,7 +937,10 @@ h3 {
   height: 245px;
   border-radius: 25px;
 }
-
+.image_card_story:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
 .desc_year {
   text-align: center;
   font-family: "Italianno", cursive;

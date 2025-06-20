@@ -25,6 +25,7 @@ import kupu1 from "./assets/kupu1.png";
 import kupu2 from "./assets/kupu2.png";
 import logo from "./assets/Wulan_&_Diaz_logo.png";
 import wulandiazopened from "./assets/wulandiazopenedimage.png";
+import wulandiazopenedModal from "./assets/wulandiazopened.png";
 import bungaataskiri from "./assets/page_sixth/bungataskiri.png";
 import bungaataskanan from "./assets/page_sixth/bungataskanan.png";
 
@@ -121,7 +122,7 @@ class HeaderComponent extends React.Component {
     const { guestData, onOpen, isOpened } = this.props;
     const guestName = guestData?.guest_name || null;
     const isWithPartner = guestData?.partner;
-    const images = [wulandiazopened];
+    const images = [wulandiazopenedModal];
     return (
       <div className="app-container">
         <div className="top-background animate__animated animate__fadeInDown animate__slower" />
