@@ -741,13 +741,14 @@ h3 {
 
 .desc_text_time {
   font-family: "Cormorant Garamond", serif;
-  font-size: 20px;
+  font-size: 17px;
   color: #79565b;
+  font-style: italic;
+  font-weight: bold;
   text-align: center;
   z-index: 99;
   line-height: 1;
   width: 300px;
-  font-style: italic;
 }
 
 .txt_title {
@@ -806,11 +807,11 @@ h3 {
 }
 
 .count_time {
-    font-family: "Wittgenstein", sans-serif;
+ font-family: "Cormorant Garamond", serif;
+  font-size: 24px;
+  font-weight: bold;
   font-style: italic;
-    
-  font-size: 22px;
-  color: #623b48;
+  color: #79565b;
   text-align: center;
   line-height: 1;
   margin: 0;
@@ -982,9 +983,10 @@ h3 {
 }
 
 .desc_qr {
-    font-weight: bold;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 22px;
+font-family: "Cormorant Garamond", serif;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: italic;
   color: #79565b;
   text-align: center;
   width: 240px;
@@ -1197,24 +1199,25 @@ h3 {
 
 .desc_gift {
   font-family: "Cormorant Garamond", serif;
-  font-size: 20px;
-  color: #79565b;
+  font-size: 17px;
+  font-style: italic;
   text-align: center;
+  font-weight: bold;
   width: 308px;
+  color: #79565b;
   z-index: 99;
   margin-top: 10px;
-  font-weight: bold;
 
 }
 .desc_grooms_brides {
   font-family: "Cormorant Garamond", serif;
   font-size: 17px;
+  font-weight: bold;
+  font-style: italic;
   color: #79565b;
   text-align: center;
   width: 308px;
   z-index: 99;
-  font-weight: bold;
-  font-style: italic;
 }
 
 .bank_first {
@@ -1330,8 +1333,9 @@ h3 {
 .desc_filter {
     font-weight: bold;
   font-family: "Cormorant Garamond", serif;
-  font-size: 20px;
+  font-size: 17px;
   color: #79565b;
+  font-style: italic;
   text-align: center;
   width: 240px;
   z-index: 99;
@@ -1432,11 +1436,11 @@ h3 {
   height: 33px;
   background-color: #fffbf0;
   border-radius: 15px;
-    font-weight: bold;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 23px;
-  font-style: normal;
-  color: #623b48;
+font-family: "Cormorant Garamond", serif;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: italic;
+  color: #79565b;
   z-index: 1000;
   border: 0;
   text-align: center;
@@ -1447,10 +1451,11 @@ h3 {
   height: 33px;
   background-color: #e9ddbb;
   border-radius: 15px;
-  font-size: 22px;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 400;
-  font-style: normal;
+  border-radius: 15px;
+font-family: "Cormorant Garamond", serif;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: italic;
   color: #623b48;
   margin-top: 24px;
   margin-bottom: 31px;
