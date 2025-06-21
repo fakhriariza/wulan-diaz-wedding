@@ -305,7 +305,7 @@ class GroomBridesComponent extends React.Component {
           <div className="wayang">
             <MotionImage
               src={wayang}
-              className="wayang_left"
+              className="wayang_left_wulan"
               animationType="sway"
               initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
@@ -313,7 +313,7 @@ class GroomBridesComponent extends React.Component {
             />
             <MotionImage
               src={wayang}
-              className="wayang_right"
+              className="wayang_right_wulan"
               animationType="sway"
               initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
