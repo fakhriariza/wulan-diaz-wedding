@@ -1623,6 +1623,9 @@ font-family: "Cormorant Garamond", serif;
 }
 
 .download_button {
+  position: relative; /* or keep your existing position */
+  z-index: 10;
+  text-decoration: none;
   padding: 10px 20px;
     font-weight: bold;
   font-family: "Cormorant Garamond", serif;

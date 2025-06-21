@@ -49,7 +49,14 @@ class FilterComponent extends React.Component {
             alt="Instagram Filter"
             animationType="bounce"
           />
-          <h4 className="filter_button">Use Filter</h4>
+        </a>
+        <a
+          href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTc2MzE2NTY4ODQ4Mzgy?story_media_id=3651128416432508864&igsh=MTY2aGZscWxyOW9jaQ=="
+          target="_blank"
+          rel="noopener noreferrer"
+          className="download_button"
+        >
+          Use Filter
         </a>
 
         <MotionImage
