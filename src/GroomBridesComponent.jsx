@@ -97,7 +97,7 @@ class GroomBridesComponent extends React.Component {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          The Wedding Of
+          The Wedding of
         </motion.h1>
         <motion.h2
           className="desc_grooms_brides"
@@ -230,7 +230,7 @@ class GroomBridesComponent extends React.Component {
             transition={{ duration: 1 }}
             className="instagram_logo"
           />
-          <h3>@diazraviv</h3>
+          <h3 className="username_handle">@diazraviv</h3>
         </a>
         {/* Bride Section */}
         <div className="background_cpw">
@@ -347,7 +347,7 @@ class GroomBridesComponent extends React.Component {
           aria-label="Visit Instagram profile of @wulanasrr"
         >
           <img src={instagramLogo} className="instagram_logo" />
-          <h3>@wulanasrr</h3>
+          <h3 className="username_handle">@wulanasrr</h3>
         </a>
         {this.state.isLightboxOpen && (
           <CustomLightbox

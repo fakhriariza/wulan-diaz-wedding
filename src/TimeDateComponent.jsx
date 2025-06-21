@@ -64,7 +64,7 @@ class TimeDataComponent extends React.Component {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
         >
-          The Moment We've Dreamed Of
+          The Moment We've Dreamed of
         </motion.h1>
 
         <motion.div
@@ -85,7 +85,7 @@ class TimeDataComponent extends React.Component {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
           >
-            Saturday <br /> 5<sup>th</sup> July <br /> 2025
+            Saturday <br /> 5 July <br /> 2025
           </motion.h3>
 
           <motion.img
@@ -103,7 +103,7 @@ class TimeDataComponent extends React.Component {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Countdowns
+          Countdown
         </motion.h3>
 
         <motion.p

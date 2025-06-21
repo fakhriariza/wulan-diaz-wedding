@@ -67,7 +67,7 @@ function PotraitOfUseComponent() {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
       >
-        Portrait of Us
+        Portraits of Us
       </motion.h1>
       <Carousel autoPlay interval="3000" transitionTime="1000" infiniteLoop>
         <div onClick={() => openLightbox(0)}>

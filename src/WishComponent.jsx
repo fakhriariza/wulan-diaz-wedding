@@ -73,7 +73,7 @@ function WishComponent({ data, invitationId }) {
         className="input_wish"
         value={text}
         onChange={(e) => setText(e.target.value)}
-        placeholder="Give Your Wish!"
+        placeholder="Give Us Your Wish!"
         rows={4}
         style={{ resize: "none", overflow: "hidden" }}
         onInput={(e) => {

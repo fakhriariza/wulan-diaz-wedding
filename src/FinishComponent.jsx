@@ -209,7 +209,7 @@ class FinishComponent extends React.Component {
         </div>
         <div className="bottom-background animate__animated animate__fadeInUp animate__slower" />
         <div className="text_finish">
-          <h1 className="title_finish">The Wedding Of</h1>
+          <h1 className="title_finish">The Wedding of</h1>
           <h1 className="name_finish">Wulan & Diaz</h1>
           <img className="img_logo_finish" src={logo}></img>
           <p className="desc_finish">

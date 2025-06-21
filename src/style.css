@@ -30,6 +30,12 @@
   z-index: 1;
   padding-bottom: 0; /* Untuk menghindari elemen ketutupan nav bar HP */
 }
+@font-face {
+  font-family: "Wittgenstein";
+  src: url("/fonts/Wittgenstein.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* Content styling */
 .content {
@@ -432,10 +438,14 @@ body {
   justify-content: center;
   z-index: 1;
 }
-
+.username_handle {
+     font-family: "Wittgenstein", sans-serif;
+  font-style: italic;
+  font-size: 18px;
+}
 .background_third {
   width: 412px;
-  height: 1750px; /* Ensures full screen height */
+  height: 1800px; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -641,15 +651,39 @@ body {
   color: #623b48;
   margin: 0;
   text-align: center;
-  
 }
 
 .instagram {
   display: flex;
   align-items: center;
+  color: #623b48;
+
+  gap: 8px; /* ⬅️ spacing between icon and text */
   text-decoration: none;
   color: #623b48;
   cursor: pointer;
+}
+
+.instagram_logo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain; /* ⬅️ ensures it doesn't stretch */
+}
+
+.username_handle {
+  font-size: 16px; /* adjust if needed */
+  font-weight: bold;
+  margin: 0;         /* removes default h3 spacing */
+  line-height: 1;    /* helps vertical alignment */
+}
+
+.instagram:hover {
+  transform: scale(1.03);
+  transition: transform 0.2s;
+}
+
+.instagram_logo:hover {
+  opacity: 0.8;
 }
 
 .instagram_logo {
@@ -772,10 +806,10 @@ h3 {
 }
 
 .count_time {
-  font-family: "Italianno", cursive;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 30px;
+    font-family: "Wittgenstein", sans-serif;
+  font-style: italic;
+    
+  font-size: 22px;
   color: #623b48;
   text-align: center;
   line-height: 1;
@@ -785,7 +819,8 @@ h3 {
 
 .add_invitation_button {
   padding: 10px 20px;
-  font-family: "Wittgenstein";
+    font-weight: bold;
+  font-family: "Cormorant Garamond", serif;
   background-color: #4f0a1c;
   color: white;
   border: none;
@@ -930,7 +965,6 @@ h3 {
 
 .title_qr {
   padding-top: 32px;
-
   font-family: "Italianno", cursive;
   font-weight: 400;
   font-style: normal;
@@ -948,8 +982,9 @@ h3 {
 }
 
 .desc_qr {
+    font-weight: bold;
   font-family: "Cormorant Garamond", serif;
-  font-size: 17px;
+  font-size: 22px;
   color: #79565b;
   text-align: center;
   width: 240px;
@@ -1162,14 +1197,14 @@ h3 {
 
 .desc_gift {
   font-family: "Cormorant Garamond", serif;
-  font-size: 17px;
+  font-size: 20px;
   color: #79565b;
   text-align: center;
   width: 308px;
   z-index: 99;
   margin-top: 10px;
   font-weight: bold;
-  font-style: italic;
+
 }
 .desc_grooms_brides {
   font-family: "Cormorant Garamond", serif;
@@ -1293,8 +1328,9 @@ h3 {
 }
 
 .desc_filter {
+    font-weight: bold;
   font-family: "Cormorant Garamond", serif;
-  font-size: 17px;
+  font-size: 20px;
   color: #79565b;
   text-align: center;
   width: 240px;
@@ -1396,9 +1432,9 @@ h3 {
   height: 33px;
   background-color: #fffbf0;
   border-radius: 15px;
-  font-size: 24px;
-  font-family: "Italianno", cursive;
-  font-weight: 400;
+    font-weight: bold;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 23px;
   font-style: normal;
   color: #623b48;
   z-index: 1000;
@@ -1411,8 +1447,8 @@ h3 {
   height: 33px;
   background-color: #e9ddbb;
   border-radius: 15px;
-  font-size: 24px;
-  font-family: "Italianno", cursive;
+  font-size: 22px;
+  font-family: "Cormorant Garamond", serif;
   font-weight: 400;
   font-style: normal;
   color: #623b48;
@@ -1482,7 +1518,7 @@ h3 {
 }
 
 .title_finish {
-  font-size: 11px;
+  font-size: 18px;
   font-family: "Cormorant Garamond", serif;
   color: #513738;
   font-weight: 500;
@@ -1491,7 +1527,7 @@ h3 {
 }
 
 .name_finish {
-  font-size: 32px;
+    font-size: 48px;
   font-family: "Alex Brush", cursive;
   color: #513738;
   font-weight: 500;
@@ -1508,7 +1544,7 @@ h3 {
 }
 
 .desc_finish {
-  font-weight: 11px;
+  font-weight: 20px;
   font-family: "Cormorant Garamond", serif;
   color: #513738;
   font-weight: 700;
@@ -1583,7 +1619,8 @@ h3 {
 
 .download_button {
   padding: 10px 20px;
-  font-family: "Wittgenstein";
+    font-weight: bold;
+  font-family: "Cormorant Garamond", serif;
   background-color: #4f0a1c;
   color: white;
   border: none;
