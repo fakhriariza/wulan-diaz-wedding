@@ -224,7 +224,7 @@ body {
   height: 48px;
   width: 61px;
   top: 48%;
-  left: 10%;
+  left: 25%;
   z-index: 7;
 }
 
@@ -233,7 +233,7 @@ body {
   z-index: 100;
   height: 61px;
   width: 59px;
-  top: 58%;
+  top: 66%;
   z-index: 7;
   right: 20%;
 }
@@ -435,7 +435,7 @@ body {
 
 .background_third {
   width: 412px;
-  height: 1550px; /* Ensures full screen height */
+  height: 1750px; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -453,16 +453,42 @@ body {
 }
 
 .image_bg_lingkaran {
-  width: 440px;
-  height: 500px;
+  width: 550px;
+  height: 550px;
+  position: absolute;
+}
+
+.image_bg_lingkaran_wulan {
+  width: 550px;
+  height: 550px;
   position: absolute;
 }
 
 .image_frame_lingkaran {
-  width: 324px;
+  top: 220px;
+  left: 38px;
+  width: 322px;
   height: 494px;
   position: absolute;
   z-index: 3;
+}
+
+.cpp_photo {
+  width: 231px;
+  height: 322px;
+  position: absolute;
+  z-index: 2;
+  margin-top: 120px;
+}
+
+.cpw_photo {
+  left: 80px;
+  top: 990px;
+  width: 231px;
+  height: 322px;
+  position: absolute;
+  z-index: 2;
+  margin-top: 120px;
 }
 
 .kupu_kupu_atas {
@@ -490,7 +516,7 @@ body {
   z-index: 100;
   width: 80px;
   height: auto;
-  top: 900px;
+  top: 1050px;
   left: 20%;
   transform: translateX(-50%);
 }
@@ -500,7 +526,7 @@ body {
   z-index: 100;
   width: 80px;
   height: auto;
-  top: 1160px;
+  top: 1260px;
   left: calc(50% + 60px);
   transform: translateX(-50%);
 }
@@ -514,25 +540,20 @@ body {
   color: #623b48;
 }
 
-.cpp_photo {
-  width: 231px;
-  height: 322px;
-  position: absolute;
-  z-index: 2;
-  margin-top: 90px;
-}
 .bunga_bawah_frame {
    position: absolute;
   z-index: 100;
-  top: 510px;
+  top: 530px;
   display: flex;
   flex-direction: row;
   gap: 200px;
+  left: 48px;
 }
 .bunga_bawah_frame_wulan {
+  left: 48px;
    position: absolute;
   z-index: 100;
-  top: 1180px;
+  top: 1330px;
   display: flex;
   flex-direction: row;
   gap: 200px;
@@ -555,6 +576,7 @@ body {
 }
 
 .name {
+  padding-top: 50px;
   font-family: "Italianno", cursive;
   font-weight: 400;
   font-style: normal;
@@ -608,7 +630,17 @@ h3 {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 100px;
+}
+
+
+.image_frame_lingkaran_wulan {
+  top: 1020px;
+  left: 38px;
+  width: 322px;
+  height: 494px;
+  position: absolute;
+  z-index: 3;
 }
 
 .background_fourth {
@@ -650,7 +682,7 @@ h3 {
 .background_time {
   display: flex;
   justify-content: center;
-  margin-bottom: 180px;
+  margin-bottom: 120px;
   margin-top: 20px;
 }
 
@@ -704,21 +736,15 @@ h3 {
 }
 
 .add_invitation_button {
-  width: 120px;
-  height: 30px;
+  padding: 10px 20px;
+  font-family: "Wittgenstein";
   background-color: #4f0a1c;
   color: white;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 14px;
+  border: none;
   border-radius: 25px;
-  /* padding: 5px; */
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  /* margin-top: 20px; */
-  z-index: 3;
-  margin-bottom: 250px;
   cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
 }
 
 .gate_time {
@@ -828,7 +854,7 @@ h3 {
 
 .background_fifth {
   width: 412px;
-  height: 900px; /* Ensures full screen height */
+  height: 990px; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -937,10 +963,7 @@ h3 {
   height: 245px;
   border-radius: 25px;
 }
-.image_card_story:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
+
 .desc_year {
   text-align: center;
   font-family: "Italianno", cursive;
@@ -1539,6 +1562,7 @@ h3 {
   background-position: center;
   justify-content: center;
   z-index: 1;
+  padding-bottom: 100px;
 }
 
 .img_footage {

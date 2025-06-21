@@ -6,6 +6,7 @@ import CustomLightbox from "./CustomLightbox";
 
 import frameBelakang from "./assets/page_third/frame_belakang.png";
 import frameLingkaran from "./assets/page_third/frame_lingkaran.png";
+import bungaMenjulurKebawahFrame from "./assets/page_third/bungaBawahFrame.png";
 import cppPhoto from "./assets/page_third/diaz.png";
 import wayang from "./assets/page_third/wayang.png";
 import instagramLogo from "./assets/page_third/instagram_logo.png";
@@ -225,7 +226,7 @@ class GroomBridesComponent extends React.Component {
         {/* Bride Section */}
         <div className="background_cpw">
           <MotionImage
-            className="image_bg_lingkaran"
+            className="image_bg_lingkaran_wulan"
             src={frameBelakang}
             animationType="bounce"
             initial={{ x: 50, opacity: 0 }}
@@ -244,7 +245,7 @@ class GroomBridesComponent extends React.Component {
             initial={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
-            className="cpp_photo"
+            className="cpw_photo"
             src={cpwPhoto}
             style={{ cursor: "pointer" }}
             onClick={() =>
@@ -264,7 +265,7 @@ class GroomBridesComponent extends React.Component {
                 lightboxIndex: 1,
               })
             }
-            className="image_frame_lingkaran"
+            className="image_frame_lingkaran_wulan"
             src={frameLingkaran}
           />
 

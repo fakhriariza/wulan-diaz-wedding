@@ -44,7 +44,7 @@ class ResepsiAkadComponent extends React.Component {
               href="https://maps.app.goo.gl/ChgqSpQ1LjgiufHn9"
               target="_blank"
               rel="noopener noreferrer"
-              className="filter_button"
+              className="download_button"
             >
               View Maps
             </a>
@@ -85,7 +85,7 @@ class ResepsiAkadComponent extends React.Component {
               href="https://maps.app.goo.gl/ChgqSpQ1LjgiufHn9"
               target="_blank"
               rel="noopener noreferrer"
-              className="filter_button"
+              className="download_button"
             >
               View Maps
             </a>
