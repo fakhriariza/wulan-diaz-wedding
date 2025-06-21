@@ -14,6 +14,7 @@ import cpwPhoto from "./assets/page_third/wulan.png";
 import kupuAtas from "./assets/page_third/Orn-kupu-1-3.png";
 import kupuBawah from "./assets/page_third/Orn-kupu-2-3.png";
 import bungaBawahFrame from "./assets/page_third/bungaBawahFrame.png";
+import bungaKeBawahFrame from "./assets/page_third/bungaKebawahFrame.png";
 
 class GroomBridesComponent extends React.Component {
   constructor(props) {
@@ -121,6 +122,14 @@ class GroomBridesComponent extends React.Component {
             transition={{ duration: 1 }}
           />
           <MotionImage
+            className="bunga_ke_bawah_frame_diaz"
+            src={bungaKeBawahFrame}
+            animationType="bounce"
+            initial={{ x: 50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+          />
+          <MotionImage
             className="bunga_bawah_frame"
             src={bungaBawahFrame}
             animationType="bounce"
@@ -193,7 +202,7 @@ class GroomBridesComponent extends React.Component {
         </div>
 
         <motion.h1
-          className="name"
+          className="name_diaz"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
@@ -228,6 +237,14 @@ class GroomBridesComponent extends React.Component {
           <MotionImage
             className="image_bg_lingkaran_wulan"
             src={frameBelakang}
+            animationType="bounce"
+            initial={{ x: 50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+          />
+          <MotionImage
+            className="bunga_ke_bawah_frame_wulan"
+            src={bungaKeBawahFrame}
             animationType="bounce"
             initial={{ x: 50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}

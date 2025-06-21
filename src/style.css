@@ -459,6 +459,7 @@ body {
 }
 
 .image_bg_lingkaran_wulan {
+  top: 980px;
   width: 550px;
   height: 550px;
   position: absolute;
@@ -558,6 +559,24 @@ body {
   flex-direction: row;
   gap: 200px;
 }
+.bunga_ke_bawah_frame_wulan {
+  left: 120px;
+   position: absolute;
+  z-index: 1;
+  top: 530px;
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
+.bunga_ke_bawah_frame_diaz {
+  left: 120px;
+   position: absolute;
+  z-index: 2;
+  top: 1330px;
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
 .wayang {
   display: flex;
   flex-direction: row;
@@ -575,8 +594,18 @@ body {
   height: 179px;
 }
 
+.name_diaz {
+  padding-top: 110px;
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color: #623b48;
+  margin: 0;
+  line-height: 1;
+}
+
 .name {
-  padding-top: 50px;
   font-family: "Italianno", cursive;
   font-weight: 400;
   font-style: normal;
@@ -594,6 +623,7 @@ body {
   color: #623b48;
   margin: 0;
   text-align: center;
+  
 }
 
 .instagram {
@@ -629,7 +659,7 @@ h3 {
 .background_cpw {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
   margin-top: 100px;
 }
 
