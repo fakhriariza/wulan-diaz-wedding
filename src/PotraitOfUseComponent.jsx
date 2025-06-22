@@ -69,7 +69,13 @@ function PotraitOfUseComponent() {
       >
         Portraits of Us
       </motion.h1>
-      <Carousel autoPlay interval="3000" transitionTime="1000" infiniteLoop>
+      <Carousel
+        autoPlay
+        interval="3000"
+        transitionTime="1000"
+        infiniteLoop
+        swipeable={false}
+      >
         <div onClick={() => openLightbox(0)}>
           <img src={fotoPotrait1} alt="" />
         </div>
