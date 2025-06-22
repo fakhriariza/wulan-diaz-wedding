@@ -46,11 +46,11 @@ const WeddingFooter = () => {
         <h6 className="footer_h5">
           <a
             className="footer_h5"
-            href="https://www.instagram.com/doa.creative/"
+            href="https://www.instagram.com/doa.selamanya/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            @doa.creative
+            @doa.selamanya
           </a>{" "}
           | Blending celebration and technology
         </h6>
