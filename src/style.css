@@ -1217,6 +1217,7 @@ h3 {
   margin-top: 10px;
 }
 .desc_grooms_brides {
+   line-height: 1.6;
   font-family: "Cormorant Garamond", serif;
   font-size: 17px;
   font-weight: bold;
@@ -1345,9 +1346,10 @@ h3 {
   font-style: italic;
   text-align: center;
   padding-top: 20px;
-
+ line-height: 1.6;
   padding-bottom: 40px;
   width: 308px;
+
   z-index: 99;
 }
 
