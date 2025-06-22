@@ -1,13 +1,5 @@
 const getMissionData = () => [
   {
-    id: 1,
-    title: "2017",
-    body: "“We met—two strangers stepping into the same lecture hall, unaware that something special was about to begin. At first, it was just light conversations between classes, a few laughs, casual hellos. Life eventually took us on different paths... but fate? Oh, it had its own plans.”",
-    createdAt: "2022-04-14T04:27:34.572Z",
-    image:
-      "https://res.cloudinary.com/dqvm5dax5/image/upload/v1750350766/2017_dwltu1.png",
-  },
-  {
     id: 2,
     title: "2020",
     body: "“Out of the blue—and straight into the comments section. One funny remark on a trending meme brought us back together on Instagram. From laughing emojis to long DMs, we found ourselves reconnecting. By the end of November, we stopped guessing and made it official: this was something real.”",
@@ -29,7 +21,7 @@ const getMissionData = () => [
     body: "“More growth, more lessons, more moments that made us realize love is in the everyday things: the “have you eaten yet?” texts, the support during tough days, and knowing exactly how each other likes their coffee.”",
     createdAt: "2022-04-14T04:27:34.572Z",
     image:
-      "https://blogger.googleusercontent.com/img/a/AVvXsEjgVYXJIGAmwEuu1JuTUXkHeWcZyDVs7ZkCyoa9W9mzjMq-FEMsLFQOzvOCbYicWOw1Y6li9W_KiAX_dzwqxvsCzduw3RMEzuVSc5WJT7VVukSimuk-Fxzmb-6OH9whuNGRMWXmqbFOB6tftMoxubGCAnRA61DUUze_khFn3M9ZowI2TcOFZ84eR82my80",
+      "https://res.cloudinary.com/dqvm5dax5/image/upload/v1750600791/2022_uzbcjd.png",
   },
   {
     id: 5,
