@@ -53,7 +53,7 @@ const getMissionData = () => [
     body: "“We're getting married! From strangers in a lecture hall to soulmates under the same roof. From a comment on Instagram to forever. This is our story—written with laughs, lyrics, and lots of love.”",
     createdAt: "2022-04-14T04:27:34.572Z",
     image:
-      "https://blogger.googleusercontent.com/img/a/AVvXsEjgVYXJIGAmwEuu1JuTUXkHeWcZyDVs7ZkCyoa9W9mzjMq-FEMsLFQOzvOCbYicWOw1Y6li9W_KiAX_dzwqxvsCzduw3RMEzuVSc5WJT7VVukSimuk-Fxzmb-6OH9whuNGRMWXmqbFOB6tftMoxubGCAnRA61DUUze_khFn3M9ZowI2TcOFZ84eR82my80",
+      "https://res.cloudinary.com/dqvm5dax5/image/upload/v1750598585/2025_vpyqsn.png",
   },
 ];
 
