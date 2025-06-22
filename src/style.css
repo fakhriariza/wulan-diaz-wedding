@@ -991,7 +991,7 @@ h3 {
   font-style: italic;
   color: #79565b;
   text-align: center;
-  width: 240px;
+  width: 308px;
   z-index: 99;
   margin-top: 20px;
 }
@@ -1343,7 +1343,7 @@ h3 {
   color: #79565b;
   font-style: italic;
   text-align: center;
-  width: 240px;
+  width: 308px;
   z-index: 99;
 }
 
@@ -1596,13 +1596,14 @@ h3 {
 }
 
 .audio-player {
-  position: fixed;
+  position: absolute;
   bottom: 20px; /* distance from bottom of screen */
   left: 50%;
   transform: translateX(-50%);
-  z-index: 9999; /* ensure it stays above other elements */
+  z-index: 1001; /* ensure it stays above other elements */
   padding: 10px;
   border-radius: 15px;
+  background: transparent;
   width: 412px;
 }
 
@@ -1698,8 +1699,14 @@ h3 {
   background-size: cover;
   background-position: center;
   justify-content: center;
-  z-index: 1;
+  pointer-events: auto;
+  z-index: 999;
   padding-top: 10px;
+}
+.decor-layer,
+.background-overlay,
+.non-clickable-layer {
+  pointer-events: none !important;
 }
 
 .section_footer {
@@ -1708,6 +1715,7 @@ h3 {
   display: flex;
   flex-direction: row;
   gap: 5px;
+  position: relative;
   align-items: baseline;
 }
 
@@ -1716,10 +1724,8 @@ h3 {
   font-style: italic;
   font-size: 12px;
   text-align: center;
-  z-index: 1000;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  z-index: 999;
+  position: relative;
   color: #513738;
 }
 
@@ -1728,10 +1734,8 @@ h3 {
   font-style: normal;
   font-size: 10px;
   text-align: center;
-  z-index: 1000;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  z-index: 999;
+  position: relative;
   color: #513738;
 }
 
