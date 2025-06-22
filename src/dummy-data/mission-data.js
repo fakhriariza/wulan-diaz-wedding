@@ -13,7 +13,7 @@ const getMissionData = () => [
     body: "“Out of the blue—and straight into the comments section. One funny remark on a trending meme brought us back together on Instagram. From laughing emojis to long DMs, we found ourselves reconnecting. By the end of November, we stopped guessing and made it official: this was something real.”",
     createdAt: "2022-04-14T04:27:34.572Z",
     image:
-      "https://blogger.googleusercontent.com/img/a/AVvXsEhEP8kB3dkkIuWzMzBtfE5zybcfei4LDOZrRNHa1yLMLvdPRK5uQPbdjQxCkm7p9eDxsunaRcIVHDJ2GAjw9Obbt_5s8eWUu50dJprETX1iM2_EcOxuqLxzgismt9QzWMXqqz6FjkZ6KbSYDPG4j0MX7dWC2oqe3s8plcArHabQ8q7nfoLjaIhropUugDQ",
+      "https://res.cloudinary.com/dqvm5dax5/image/upload/v1750602126/2020_utj23c.png",
   },
   {
     id: 3,

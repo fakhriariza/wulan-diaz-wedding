@@ -18,7 +18,7 @@ const EngagementFootageComponent = () => {
         Our Engagement Footage
       </motion.h1>
       <motion.p
-        className="desc_gift"
+        className="desc_filter"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.2 }}

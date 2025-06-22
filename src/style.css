@@ -556,7 +556,7 @@ body {
 .bunga_bawah_frame {
   position: absolute;
   z-index: 100;
-  top: 530px;
+  top: 550px;
   display: flex;
   flex-direction: row;
   gap: 200px;
@@ -566,7 +566,7 @@ body {
   left: 48px;
   position: absolute;
   z-index: 100;
-  top: 1330px;
+  top: 1350px;
   display: flex;
   flex-direction: row;
   gap: 200px;
@@ -750,6 +750,8 @@ h3 {
   z-index: 99;
   line-height: 1;
   width: 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .txt_title {
@@ -1342,6 +1344,9 @@ h3 {
   color: #79565b;
   font-style: italic;
   text-align: center;
+  padding-top: 20px;
+
+  padding-bottom: 40px;
   width: 308px;
   z-index: 99;
 }
