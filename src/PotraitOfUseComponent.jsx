@@ -70,6 +70,7 @@ function PotraitOfUseComponent() {
         Portraits of Us
       </motion.h1>
       <Carousel
+        className="carousel_yes"
         autoPlay
         interval="3000"
         transitionTime="1000"

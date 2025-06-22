@@ -1112,6 +1112,10 @@ h3 {
   overflow-y: hidden;
 }
 
+.thumbnail-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
 .carousel .slide img {
   border-radius: 25px;
   width: 25% !important;
@@ -1681,6 +1685,54 @@ h3 {
   width: 150px;
   left: 0;
   top: 0;
+}
+
+.wedding-footer {
+  width: 412px;
+  height: fit-content; /* Ensures full screen height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-image: url("assets/background.png");
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  z-index: 1;
+  padding-top: 10px;
+}
+
+.section_footer {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: baseline;
+}
+
+.footer_h6 {
+  font-family: "Wittgenstein";
+  font-style: italic;
+  font-size: 12px;
+  text-align: center;
+  z-index: 1000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #513738;
+}
+
+.footer_h5 {
+  font-family: "Cormorant Garamond", serif;
+  font-style: normal;
+  font-size: 10px;
+  text-align: center;
+  z-index: 1000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #513738;
 }
 
 @media (max-width: 400px) {

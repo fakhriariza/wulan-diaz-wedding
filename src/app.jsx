@@ -21,6 +21,7 @@ import WishComponent from "./WishComponent";
 import FinishComponent from "./FinishComponent";
 import AudioPlayer from "./AudioPlayer";
 import EngagementFootageComponent from "./EngagementFootageComponent";
+import WeddingFooter from "./WeddingFooter";
 
 class MyComponent extends React.Component {
   constructor(props) {
@@ -94,6 +95,7 @@ class MyComponent extends React.Component {
             />
             <EngagementFootageComponent />
             <FinishComponent />
+            <WeddingFooter />
           </div>
         )}
       </div>
