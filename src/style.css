@@ -278,24 +278,28 @@ body {
   color: #513738;
 }
 
-.guest-name {
+.invite-wrapper {
   position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* spacing between name and button */
+  z-index: 1000;
+}
+
+.guest-name {
   font-family: "Wittgenstein";
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
-  text-align: center; /* Centers the text within the element */
-  z-index: 1000;
-  top: 58%;
-  width: 200px;
-  height: 40px;
+  text-align: center;
   color: #513738;
 }
 
 .open-invite-btn {
-  position: absolute;
-  bottom: 40px;
-  top: 71%;
   width: 200px;
   height: 40px;
   font-family: "Wittgenstein";
@@ -305,7 +309,6 @@ body {
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  z-index: 10;
 }
 .second_page {
   width: 412px;
@@ -439,7 +442,7 @@ body {
   z-index: 1;
 }
 .username_handle {
-     font-family: "Wittgenstein", sans-serif;
+  font-family: "Wittgenstein", sans-serif;
   font-style: italic;
   font-size: 18px;
 }
@@ -552,7 +555,7 @@ body {
 }
 
 .bunga_bawah_frame {
-   position: absolute;
+  position: absolute;
   z-index: 100;
   top: 530px;
   display: flex;
@@ -562,7 +565,7 @@ body {
 }
 .bunga_bawah_frame_wulan {
   left: 48px;
-   position: absolute;
+  position: absolute;
   z-index: 100;
   top: 1330px;
   display: flex;
@@ -572,7 +575,7 @@ body {
 .wayang_left_wulan {
   position: absolute;
   top: 1240px; /* Slightly above the bunga_bawah_frame_wulan */
-  left: -5px;   /* Push to the far left of the container */
+  left: -5px; /* Push to the far left of the container */
   width: 117px;
   height: 179px;
   z-index: 1;
@@ -581,7 +584,7 @@ body {
 .wayang_right_wulan {
   position: absolute;
   top: 1240px;
-  right: -5px;  /* Push to the far right of the container */
+  right: -5px; /* Push to the far right of the container */
   width: 117px;
   height: 179px;
   z-index: 1;
@@ -589,7 +592,7 @@ body {
 
 .bunga_ke_bawah_frame_wulan {
   left: 120px;
-   position: absolute;
+  position: absolute;
   z-index: 1;
   top: 530px;
   display: flex;
@@ -598,7 +601,7 @@ body {
 }
 .bunga_ke_bawah_frame_diaz {
   left: 120px;
-   position: absolute;
+  position: absolute;
   z-index: 2;
   top: 1330px;
   display: flex;
@@ -673,8 +676,8 @@ body {
 .username_handle {
   font-size: 16px; /* adjust if needed */
   font-weight: bold;
-  margin: 0;         /* removes default h3 spacing */
-  line-height: 1;    /* helps vertical alignment */
+  margin: 0; /* removes default h3 spacing */
+  line-height: 1; /* helps vertical alignment */
 }
 
 .instagram:hover {
@@ -714,7 +717,6 @@ h3 {
   margin-bottom: 75px;
   margin-top: 100px;
 }
-
 
 .image_frame_lingkaran_wulan {
   top: 1020px;
@@ -807,7 +809,7 @@ h3 {
 }
 
 .count_time {
- font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 24px;
   font-weight: bold;
   font-style: italic;
@@ -820,7 +822,7 @@ h3 {
 
 .add_invitation_button {
   padding: 10px 20px;
-    font-weight: bold;
+  font-weight: bold;
   font-family: "Cormorant Garamond", serif;
   background-color: #4f0a1c;
   color: white;
@@ -983,7 +985,7 @@ h3 {
 }
 
 .desc_qr {
-font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 17px;
   font-weight: bold;
   font-style: italic;
@@ -1106,7 +1108,8 @@ font-family: "Cormorant Garamond", serif;
   background-position: center;
   justify-content: center;
   z-index: 1;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .carousel .slide img {
@@ -1207,7 +1210,6 @@ font-family: "Cormorant Garamond", serif;
   color: #79565b;
   z-index: 99;
   margin-top: 10px;
-
 }
 .desc_grooms_brides {
   font-family: "Cormorant Garamond", serif;
@@ -1331,7 +1333,7 @@ font-family: "Cormorant Garamond", serif;
 }
 
 .desc_filter {
-    font-weight: bold;
+  font-weight: bold;
   font-family: "Cormorant Garamond", serif;
   font-size: 17px;
   color: #79565b;
@@ -1436,7 +1438,7 @@ font-family: "Cormorant Garamond", serif;
   height: 33px;
   background-color: #fffbf0;
   border-radius: 15px;
-font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 17px;
   font-weight: bold;
   font-style: italic;
@@ -1452,7 +1454,7 @@ font-family: "Cormorant Garamond", serif;
   background-color: #e9ddbb;
   border-radius: 15px;
   border-radius: 15px;
-font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 17px;
   font-weight: bold;
   font-style: italic;
@@ -1532,7 +1534,7 @@ font-family: "Cormorant Garamond", serif;
 }
 
 .name_finish {
-    font-size: 48px;
+  font-size: 48px;
   font-family: "Alex Brush", cursive;
   color: #513738;
   font-weight: 500;
@@ -1627,7 +1629,7 @@ font-family: "Cormorant Garamond", serif;
   z-index: 10;
   text-decoration: none;
   padding: 10px 20px;
-    font-weight: bold;
+  font-weight: bold;
   font-family: "Cormorant Garamond", serif;
   background-color: #4f0a1c;
   color: white;
@@ -1992,24 +1994,28 @@ font-family: "Cormorant Garamond", serif;
     color: #513738;
   }
 
-  .guest-name {
+  .invite-wrapper {
     position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* spacing between name and button */
+    z-index: 1000;
+  }
+
+  .guest-name {
     font-family: "Wittgenstein";
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
-    text-align: center; /* Centers the text within the element */
-    z-index: 1000;
-    top: 50%;
-    width: 200px;
-    height: 40px;
+    text-align: center;
     color: #513738;
   }
 
   .open-invite-btn {
-    position: absolute;
-    bottom: 40px;
-    top: 63%;
     width: 200px;
     height: 40px;
     font-family: "Wittgenstein";
@@ -2019,7 +2025,6 @@ font-family: "Cormorant Garamond", serif;
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    z-index: 10;
   }
 
   /* .bungataskiri {

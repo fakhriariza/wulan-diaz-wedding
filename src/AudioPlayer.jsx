@@ -7,21 +7,65 @@ import playIcon from "./assets/icon_play_icon.gif";
 const AudioPlayer = () => {
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
+  const fadeInterval = useRef(null);
 
-  // Listen for global 'startAudio' event
+  const fadeOut = () => {
+    if (!audioRef.current) return;
+    clearInterval(fadeInterval.current);
+
+    fadeInterval.current = setInterval(() => {
+      if (audioRef.current.volume > 0.1) {
+        audioRef.current.volume = Math.max(0, audioRef.current.volume - 0.1);
+      } else {
+        audioRef.current.volume = 0;
+        audioRef.current.pause();
+        setIsPlaying(false);
+        clearInterval(fadeInterval.current);
+      }
+    }, 100);
+  };
+
+  const fadeIn = () => {
+    if (!audioRef.current) return;
+    clearInterval(fadeInterval.current);
+    audioRef.current.volume = 0;
+    audioRef.current
+      .play()
+      .then(() => setIsPlaying(true))
+      .catch((err) => console.log("Auto play failed:", err));
+
+    fadeInterval.current = setInterval(() => {
+      if (audioRef.current.volume < 0.9) {
+        audioRef.current.volume = Math.min(1, audioRef.current.volume + 0.1);
+      } else {
+        audioRef.current.volume = 1;
+        clearInterval(fadeInterval.current);
+      }
+    }, 100);
+  };
+
+  // Global startAudio event
   useEffect(() => {
     const handleStartAudio = () => {
       if (!audioRef.current) return;
-      audioRef.current
-        .play()
-        .then(() => setIsPlaying(true))
-        .catch((err) => console.log("Audio play failed:", err));
+      fadeIn();
+    };
+
+    const handleVisibilityChange = () => {
+      if (!audioRef.current) return;
+      if (document.hidden) {
+        fadeOut();
+      } else {
+        fadeIn();
+      }
     };
 
     window.addEventListener("startAudio", handleStartAudio);
+    document.addEventListener("visibilitychange", handleVisibilityChange);
 
     return () => {
       window.removeEventListener("startAudio", handleStartAudio);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
     };
   }, []);
 
@@ -29,22 +73,15 @@ const AudioPlayer = () => {
     if (!audioRef.current) return;
 
     if (isPlaying) {
-      audioRef.current.pause();
-      setIsPlaying(false);
+      fadeOut();
     } else {
-      audioRef.current
-        .play()
-        .then(() => setIsPlaying(true))
-        .catch((err) => console.log("Audio play failed:", err));
+      fadeIn();
     }
   };
 
-  //   const playIcon = "https://cdn-icons-png.flaticon.com/512/727/727245.png";
-  //   const pauseIcon = "https://cdn-icons-png.flaticon.com/512/727/727239.png";
-
   return (
     <div className="audio-player">
-      <audio ref={audioRef} src={sound} loop />
+      <audio ref={audioRef} src={sound} loop preload="auto" />
       <button className="play-button" onClick={togglePlay}>
         <img
           src={isPlaying ? musicIcon : playIcon}

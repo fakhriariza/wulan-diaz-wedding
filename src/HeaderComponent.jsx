@@ -249,25 +249,27 @@ class HeaderComponent extends React.Component {
           </>
         )}
 
-        {!isOpened && guestName && (
-          <p className="guest-name animate__animated animate__fadeInUp animate__delay-2s">
-            Dear: <br></br>{" "}
-            <strong>
-              {guestName} {isWithPartner ? "dan Partner" : ""}
-            </strong>
-          </p>
-        )}
-
         {!isOpened && (
-          <button
-            className="open-invite-btn animate__animated animate__fadeInUp animate__delay-1s"
-            onClick={() => {
-              window.dispatchEvent(new Event("startAudio"));
-              onOpen?.();
-            }}
-          >
-            Open Invitation
-          </button>
+          <div className="invite-wrapper">
+            {guestName && (
+              <p className="guest-name animate__animated animate__fadeInUp animate__delay-2s">
+                Dear: <br />
+                <strong>
+                  {guestName} {isWithPartner ? "dan Partner" : ""}
+                </strong>
+              </p>
+            )}
+
+            <button
+              className="open-invite-btn animate__animated animate__fadeInUp animate__delay-1s"
+              onClick={() => {
+                window.dispatchEvent(new Event("startAudio"));
+                onOpen?.();
+              }}
+            >
+              Open Invitation
+            </button>
+          </div>
         )}
 
         {isOpened && (
