@@ -1108,7 +1108,7 @@ h3 {
   background-position: center;
   justify-content: center;
   z-index: 1;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: hidden;
 }
 
