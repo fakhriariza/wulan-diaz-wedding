@@ -1,5 +1,13 @@
 const getMissionData = () => [
   {
+    id: 1,
+    title: "2017",
+    body: "“We met—two strangers stepping into the same lecture hall, unaware that something special was about to begin. At first, it was just light conversations between classes, a few laughs, casual hellos. Life eventually took us on different paths... but fate? Oh, it had its own plans.”",
+    createdAt: "2022-04-14T04:27:34.572Z",
+    image:
+      "https://res.cloudinary.com/dqvm5dax5/image/upload/v1750350766/2017_dwltu1.png",
+  },
+  {
     id: 2,
     title: "2020",
     body: "“Out of the blue—and straight into the comments section. One funny remark on a trending meme brought us back together on Instagram. From laughing emojis to long DMs, we found ourselves reconnecting. By the end of November, we stopped guessing and made it official: this was something real.”",
