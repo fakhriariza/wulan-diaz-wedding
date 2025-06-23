@@ -3,23 +3,15 @@ import "animate.css";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import React, { useRef, useEffect, useState } from "react";
-import { motion, useInView, useAnimation } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 import MotionImage from "./MotionImage";
-import CustomLightbox from "./CustomLightbox"; // ✅
 
 import bungaataskiri from "./assets/page_sixth/bungataskiri.png";
 import bungaataskanan from "./assets/page_sixth/bungataskanan.png";
 import bgstory from "./assets/page_sixth/bgstory.png";
 
 function OurStoryComponent({ data }) {
-  const [lightboxOpen, setLightboxOpen] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const openLightbox = (index) => {
-    setCurrentIndex(index);
-    setLightboxOpen(true);
-  };
   return (
     <div className="background_story">
       <motion.h1
@@ -58,7 +50,7 @@ function OurStoryComponent({ data }) {
           pause="hover"
           wrap={true}
         >
-          {data.map((data, index) => (
+          {data.map((data) => (
             <Carousel.Item key={data.id} interval={null} wrap={false}>
               <motion.div
                 className="carousel_story"
@@ -66,21 +58,13 @@ function OurStoryComponent({ data }) {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8 }}
               >
-                <div
-                  onClick={() => openLightbox(index)}
-                  style={{ cursor: "pointer" }}
-                >
-                  <motion.img
-                    className="image_card_story"
-                    onClick={() => openLightbox(index)} // ✅ Now index is defined
-                    src={data.image || "https://via.placeholder.com/150"}
-                    initial={{ scale: 0.95 }}
-                    whileInView={{ scale: 1 }}
-                    transition={{ duration: 1 }}
-                    style={{ cursor: "pointer" }}
-                  />
-                </div>
-
+                <motion.img
+                  className="image_card_story"
+                  src={data.image || "https://via.placeholder.com/150"}
+                  initial={{ scale: 0.95 }}
+                  whileInView={{ scale: 1 }}
+                  transition={{ duration: 1 }}
+                />
                 <div className="card_bottom">
                   <p className="desc_year">{data.title}</p>
                   <p className="desc_story">{data.body}</p>
@@ -90,13 +74,6 @@ function OurStoryComponent({ data }) {
           ))}
         </Carousel>
       </div>
-      {/* ✅ Lightbox */}
-      <CustomLightbox
-        open={lightboxOpen}
-        onClose={() => setLightboxOpen(false)}
-        images={data.map((d) => d.image)}
-        index={currentIndex}
-      />
     </div>
   );
 }

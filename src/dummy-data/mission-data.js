@@ -13,7 +13,7 @@ const getMissionData = () => [
     body: "“Out of the blue—and straight into the comments section. One funny remark on a trending meme brought us back together on Instagram. From laughing emojis to long DMs, we found ourselves reconnecting. By the end of November, we stopped guessing and made it official: this was something real.”",
     createdAt: "2022-04-14T04:27:34.572Z",
     image:
-      "https://blogger.googleusercontent.com/img/a/AVvXsEhEP8kB3dkkIuWzMzBtfE5zybcfei4LDOZrRNHa1yLMLvdPRK5uQPbdjQxCkm7p9eDxsunaRcIVHDJ2GAjw9Obbt_5s8eWUu50dJprETX1iM2_EcOxuqLxzgismt9QzWMXqqz6FjkZ6KbSYDPG4j0MX7dWC2oqe3s8plcArHabQ8q7nfoLjaIhropUugDQ",
+      "https://res.cloudinary.com/dqvm5dax5/image/upload/v1750602126/2020_utj23c.png",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const getMissionData = () => [
     body: "“More growth, more lessons, more moments that made us realize love is in the everyday things: the “have you eaten yet?” texts, the support during tough days, and knowing exactly how each other likes their coffee.”",
     createdAt: "2022-04-14T04:27:34.572Z",
     image:
-      "https://blogger.googleusercontent.com/img/a/AVvXsEjgVYXJIGAmwEuu1JuTUXkHeWcZyDVs7ZkCyoa9W9mzjMq-FEMsLFQOzvOCbYicWOw1Y6li9W_KiAX_dzwqxvsCzduw3RMEzuVSc5WJT7VVukSimuk-Fxzmb-6OH9whuNGRMWXmqbFOB6tftMoxubGCAnRA61DUUze_khFn3M9ZowI2TcOFZ84eR82my80",
+      "https://res.cloudinary.com/dqvm5dax5/image/upload/v1750600791/2022_uzbcjd.png",
   },
   {
     id: 5,
@@ -53,7 +53,7 @@ const getMissionData = () => [
     body: "“We're getting married! From strangers in a lecture hall to soulmates under the same roof. From a comment on Instagram to forever. This is our story—written with laughs, lyrics, and lots of love.”",
     createdAt: "2022-04-14T04:27:34.572Z",
     image:
-      "https://blogger.googleusercontent.com/img/a/AVvXsEjgVYXJIGAmwEuu1JuTUXkHeWcZyDVs7ZkCyoa9W9mzjMq-FEMsLFQOzvOCbYicWOw1Y6li9W_KiAX_dzwqxvsCzduw3RMEzuVSc5WJT7VVukSimuk-Fxzmb-6OH9whuNGRMWXmqbFOB6tftMoxubGCAnRA61DUUze_khFn3M9ZowI2TcOFZ84eR82my80",
+      "https://res.cloudinary.com/dqvm5dax5/image/upload/v1750598585/2025_vpyqsn.png",
   },
 ];
 

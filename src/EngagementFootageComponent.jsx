@@ -17,6 +17,17 @@ const EngagementFootageComponent = () => {
       >
         Our Engagement Footage
       </motion.h1>
+      <motion.p
+        className="desc_filter"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.2 }}
+      >
+        A little glimpse into the day she said #yAz to forever. Here's a piece
+        of our hearts — Watch our engagement moments in motion. Grateful to
+        share this moment with you.
+      </motion.p>
+
       <a
         href="https://www.instagram.com/reel/DCvV1ISTeu3/?igsh=MW05cGs0MXh0cmRueQ=="
         target="_blank"
