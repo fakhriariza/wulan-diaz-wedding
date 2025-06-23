@@ -503,6 +503,9 @@ body {
 }
 
 .cpp_photo {
+  left: 80px;
+  top: 190px;
+
   width: 231px;
   height: 322px;
   position: absolute;
