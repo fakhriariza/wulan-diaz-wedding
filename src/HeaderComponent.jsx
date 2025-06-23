@@ -28,6 +28,7 @@ import wulandiazopened from "./assets/wulandiazopenedimage.png";
 import wulandiazopenedModal from "./assets/wulandiazopened.png";
 import bungaataskiri from "./assets/page_sixth/bungataskiri.png";
 import bungaataskanan from "./assets/page_sixth/bungataskanan.png";
+//halo dunia
 
 const fadeIn = (direction = "up", delay = 0) => {
   const variants = {
