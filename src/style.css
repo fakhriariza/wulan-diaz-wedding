@@ -1766,11 +1766,86 @@ h3 {
   color: #513738;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 401px) {
   .wedding-footer {
     max-width: 400px;
     width: 100vw;
   }
+  .image_frame_lingkaran {
+  top: 220px;
+  left: 12px;
+  width: 322px;
+  height: 494px;
+  position: absolute;
+  z-index: 3;
+}
+
+  .image_frame_lingkaran_wulan {
+  top: 1020px;
+  left: 12px;
+  width: 322px;
+  height: 494px;
+  position: absolute;
+  z-index: 3;
+}
+
+.cpp_photo {
+  left: 55px;
+  top: 190px;
+
+  width: 231px;
+  height: 322px;
+  position: absolute;
+  z-index: 2;
+  margin-top: 120px;
+}
+
+.cpw_photo {
+  left: 55px;
+  top: 990px;
+  width: 231px;
+  height: 322px;
+  position: absolute;
+  z-index: 2;
+  margin-top: 120px;
+}
+
+.bunga_bawah_frame {
+  position: absolute;
+  z-index: 100;
+  top: 550px;
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  left: 22px;
+}
+.bunga_bawah_frame_wulan {
+  left: 22px;
+  position: absolute;
+  z-index: 100;
+  top: 1350px;
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
+.bunga_ke_bawah_frame_wulan {
+  left: 100px;
+  position: absolute;
+  z-index: 1;
+  top: 530px;
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
+.bunga_ke_bawah_frame_diaz {
+  left: 100px;
+  position: absolute;
+  z-index: 2;
+  top: 1330px;
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
   .app-container {
     max-width: 400px;
     width: 100vw;
@@ -1790,6 +1865,7 @@ h3 {
     max-width: 400px;
     width: 100vw;
   }
+
 
   .background_story {
     max-width: 400px;
