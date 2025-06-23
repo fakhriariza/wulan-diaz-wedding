@@ -302,7 +302,7 @@ class GroomBridesComponent extends React.Component {
             whileInView={{ opacity: 1 }}
           />
 
-          <div className="wayang">
+          <div className="wayang_wulan">
             <MotionImage
               src={wayang}
               className="wayang_left_wulan"

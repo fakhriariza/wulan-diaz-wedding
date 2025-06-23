@@ -494,33 +494,84 @@ body {
 }
 
 .image_frame_lingkaran {
-  top: 220px;
-  left: 38px;
-  width: 322px;
-  height: 494px;
   position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80vw;
+  max-width: 322px;
+  height: auto;
   z-index: 3;
 }
 
-.cpp_photo {
-  left: 80px;
-  top: 190px;
+.image_frame_lingkaran_wulan {
+  top: 1020px;
+   left: 50%;
+  transform: translateX(-50%);
+  width: 80vw;
+  max-width: 322px;
+  height: auto;
+  position: absolute;
+  z-index: 3;
+}
+.bunga_bawah_frame {
+  position: absolute;
+  z-index: 100;
+  top :550px;
+  transform: translateX(-50%);
+  width: 80vw;
+  max-width: 322px;
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
+.bunga_bawah_frame_wulan {
+  position: absolute;
+  z-index: 100;
+  transform: translateX(-50%);
+  top: 1350px;
 
-  width: 231px;
-  height: 322px;
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
+
+.bunga_ke_bawah_frame_wulan {
+  position: absolute;
+  z-index: 1;
+  top: 530px;
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
+.bunga_ke_bawah_frame_diaz {
   position: absolute;
   z-index: 2;
-  margin-top: 120px;
+  top: 1330px;
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
+.cpp_photo {
+  position: absolute;
+  top: 190px;
+   transform: translate(-50%, -50%);
+ width: 80vw;
+  max-width: 231px;
+  height: auto;
+  z-index: 2;
+  margin-top: 120px; /* optional, but may be redundant now */
 }
 
 .cpw_photo {
-  left: 80px;
-  top: 990px;
-  width: 231px;
-  height: 322px;
   position: absolute;
+  top: 990px;
+   transform: translate(-50%, -50%);
+ width: 80vw;
+  max-width: 231px;
+  height: auto;
   z-index: 2;
-  margin-top: 120px;
+  margin-top: 120px; /* same here */
 }
 
 .kupu_kupu_atas {
@@ -572,60 +623,21 @@ body {
   color: #623b48;
 }
 
-.bunga_bawah_frame {
-  position: absolute;
-  z-index: 100;
-  top: 550px;
+.wayang_wulan {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 200px;
-  left: 48px;
-}
-.bunga_bawah_frame_wulan {
-  left: 48px;
-  position: absolute;
-  z-index: 100;
-  top: 1350px;
-  display: flex;
-  flex-direction: row;
-  gap: 200px;
-}
-.wayang_left_wulan {
-  position: absolute;
-  top: 1240px; /* Slightly above the bunga_bawah_frame_wulan */
-  left: -5px; /* Push to the far left of the container */
-  width: 117px;
-  height: 179px;
-  z-index: 1;
+  margin-top: 220px; /* same as groom */
 }
 
+.wayang_left_wulan,
 .wayang_right_wulan {
-  position: absolute;
-  top: 1240px;
-  right: -5px; /* Push to the far right of the container */
   width: 117px;
   height: 179px;
-  z-index: 1;
 }
 
-.bunga_ke_bawah_frame_wulan {
-  left: 120px;
-  position: absolute;
-  z-index: 1;
-  top: 530px;
-  display: flex;
-  flex-direction: row;
-  gap: 200px;
-}
-.bunga_ke_bawah_frame_diaz {
-  left: 120px;
-  position: absolute;
-  z-index: 2;
-  top: 1330px;
-  display: flex;
-  flex-direction: row;
-  gap: 200px;
-}
 .wayang {
   display: flex;
   flex-direction: row;
@@ -644,13 +656,12 @@ body {
 }
 
 .name_diaz {
-  padding-top: 130px;
+padding-top: clamp(80px, 10vw, 170px);
   font-family: "Italianno", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: 60px;
   color: #623b48;
-  margin: 0;
   line-height: 1;
 }
 
@@ -660,7 +671,7 @@ body {
   font-style: normal;
   font-size: 60px;
   color: #623b48;
-  margin-top: 170px;
+margin-top: clamp(80px, 10vw, 170px);
   line-height: 1;
 }
 
@@ -736,14 +747,6 @@ h3 {
   margin-top: 100px;
 }
 
-.image_frame_lingkaran_wulan {
-  top: 1020px;
-  left: 38px;
-  width: 322px;
-  height: 494px;
-  position: absolute;
-  z-index: 3;
-}
 
 .background_fourth {
   width: 412px;
@@ -1771,81 +1774,27 @@ h3 {
     max-width: 400px;
     width: 100vw;
   }
+.image_bg_lingkaran,
+  .image_bg_lingkaran_wulan {
+    width: 450px;
+    height: 450px;
+  }
+
+  .cpp_photo {
+    top: 180px; /* or tweak as needed */
+  }
+
+  .cpw_photo {
+    top: 980px; /* or tweak as needed */
+  }
+
   .image_frame_lingkaran {
-  top: 220px;
-  left: 12px;
-  width: 322px;
-  height: 494px;
-  position: absolute;
-  z-index: 3;
-}
+    top: 250px; /* lower it slightly for spacing */
+  }
 
   .image_frame_lingkaran_wulan {
-  top: 1020px;
-  left: 12px;
-  width: 322px;
-  height: 494px;
-  position: absolute;
-  z-index: 3;
-}
-
-.cpp_photo {
-  left: 55px;
-  top: 190px;
-
-  width: 231px;
-  height: 322px;
-  position: absolute;
-  z-index: 2;
-  margin-top: 120px;
-}
-
-.cpw_photo {
-  left: 55px;
-  top: 990px;
-  width: 231px;
-  height: 322px;
-  position: absolute;
-  z-index: 2;
-  margin-top: 120px;
-}
-
-.bunga_bawah_frame {
-  position: absolute;
-  z-index: 100;
-  top: 550px;
-  display: flex;
-  flex-direction: row;
-  gap: 200px;
-  left: 22px;
-}
-.bunga_bawah_frame_wulan {
-  left: 22px;
-  position: absolute;
-  z-index: 100;
-  top: 1350px;
-  display: flex;
-  flex-direction: row;
-  gap: 200px;
-}
-.bunga_ke_bawah_frame_wulan {
-  left: 100px;
-  position: absolute;
-  z-index: 1;
-  top: 530px;
-  display: flex;
-  flex-direction: row;
-  gap: 200px;
-}
-.bunga_ke_bawah_frame_diaz {
-  left: 100px;
-  position: absolute;
-  z-index: 2;
-  top: 1330px;
-  display: flex;
-  flex-direction: row;
-  gap: 200px;
-}
+    top: 1060px; /* lower it slightly for spacing */
+  }
   .app-container {
     max-width: 400px;
     width: 100vw;
