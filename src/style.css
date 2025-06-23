@@ -1,6 +1,19 @@
 /* Make the page fill the screen */
+.render_about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.render_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .app-container {
-  width: 412px;
+  width: 100vw;
   height: 100vh; /* Ensures full screen height */
   min-height: 100vh;
   display: flex;
@@ -13,10 +26,11 @@
   justify-content: center;
   z-index: 1;
   padding-top: 50px;
+  overflow: hidden;
 }
 
 .app-container-finish {
-  width: 412px;
+  width: 100vw;
   height: 100vh; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
@@ -27,6 +41,7 @@
   background-position: center;
   justify-content: center;
   z-index: 1;
+  overflow: hidden;
   padding-bottom: 0; /* Untuk menghindari elemen ketutupan nav bar HP */
 }
 @font-face {
@@ -310,7 +325,7 @@ body {
   cursor: pointer;
 }
 .second_page {
-  width: 412px;
+  width: 100vw;
   height: 586px; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
@@ -428,7 +443,7 @@ body {
 }
 
 .background_sec {
-  width: 412px;
+  width: 100vw;
   height: 586px; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
@@ -446,7 +461,7 @@ body {
   font-size: 18px;
 }
 .background_third {
-  width: 412px;
+  width: 100vw;
   height: 1800px; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
@@ -456,6 +471,7 @@ body {
   background-size: cover;
   background-position: center;
   z-index: 1;
+  overflow: hidden;
 }
 
 .background_cpp {
@@ -833,7 +849,7 @@ h3 {
 }
 
 .gate_time {
-  width: 412px;
+  width: 100vw;
   height: 579px;
   position: absolute;
   left: 0;
@@ -938,8 +954,8 @@ h3 {
 }
 
 .background_fifth {
-  width: 412px;
-  height: 990px; /* Ensures full screen height */
+  width: 100vw;
+  height: 990px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -953,7 +969,7 @@ h3 {
 
 .background_qr {
   padding-top: 32px;
-  width: 412px;
+  width: 100vw;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -996,7 +1012,7 @@ h3 {
 }
 
 .background_story {
-  width: 412px;
+  width: 100vw;
   height: 90vh; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
@@ -1006,6 +1022,7 @@ h3 {
   background-size: cover;
   background-position: center;
   z-index: 1;
+  overflow: hidden;
 }
 
 .title_story {
@@ -1091,12 +1108,12 @@ h3 {
 .bgstory {
   position: absolute;
   height: 431px;
-  width: 412px;
+  width: 100vw;
   bottom: 0;
 }
 
 .background_potrait {
-  width: 412px;
+  width: 100vw;
   height: fit-content; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
@@ -1181,7 +1198,7 @@ h3 {
 }
 
 .background_gift {
-  width: 412px;
+  width: 100vw;
   height: 55vh; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
@@ -1313,7 +1330,7 @@ h3 {
 
 .background_filter {
   padding-top: 20px;
-  width: 412px;
+  width: 100vw;
   height: fit-content; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
@@ -1394,7 +1411,7 @@ h3 {
 .bgfilter {
   position: absolute;
   z-index: 2;
-  width: 412px;
+  width: 100vw;
   height: 100vh;
   left: 0;
   right: 0;
@@ -1414,7 +1431,7 @@ h3 {
 
 .background_wish {
   padding-top: 32px;
-  width: 412px;
+  width: 100vw;
   height: fit-content; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
@@ -1603,7 +1620,7 @@ h3 {
   padding: 10px;
   border-radius: 15px;
   background: transparent;
-  width: 412px;
+  width: 100vw;
 }
 
 .play-button {
@@ -1650,7 +1667,7 @@ h3 {
 }
 
 .background_footage {
-  width: 412px;
+  width: 100vw;
   height: fit-content; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
@@ -1688,7 +1705,7 @@ h3 {
 }
 
 .wedding-footer {
-  width: 412px;
+  width: 100vw;
   height: fit-content; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
@@ -1700,6 +1717,7 @@ h3 {
   justify-content: center;
   pointer-events: auto;
   z-index: 999;
+  overflow: hidden;
   padding-top: 10px;
 }
 .decor-layer,
@@ -1739,45 +1757,49 @@ h3 {
 }
 
 @media (max-width: 400px) {
+  .wedding-footer {
+    max-width: 400px;
+    width: 100vw;
+  }
   .app-container {
-    max-width: 380px;
+    max-width: 400px;
     width: 100vw;
   }
 
   .audio-player {
-    max-width: 380px;
+    max-width: 400px;
     width: 100vw;
   }
 
   .background_sec {
-    max-width: 380px;
+    max-width: 400px;
     width: 100vw;
   }
 
   .background_third {
-    max-width: 380px;
+    max-width: 400px;
     width: 100vw;
   }
 
   .background_story {
-    max-width: 380px;
+    max-width: 400px;
     width: 100vw;
     height: fit-content;
     padding-bottom: 40px;
   }
 
   .background_fourth {
-    max-width: 380px;
+    max-width: 400px;
     width: 100vw;
   }
 
   .background_fifth {
-    max-width: 380px;
+    max-width: 400px;
     width: 100vw;
   }
 
   .gate_time {
-    width: 380px;
+    width: 400px;
     height: 520px;
     left: 0;
     right: 0;
@@ -1785,20 +1807,20 @@ h3 {
 
   .background_qr {
     width: 100vw;
-    max-width: 380px;
+    max-width: 400px;
     height: fit-content;
     padding-bottom: 40px;
   }
 
   .background_potrait {
     width: 100vw;
-    max-width: 380px;
+    max-width: 400px;
     height: fit-content;
   }
 
   .background_gift {
     width: 100vw;
-    max-width: 380px;
+    max-width: 400px;
     height: fit-content;
   }
 
@@ -1808,25 +1830,384 @@ h3 {
 
   .background_filter {
     width: 100vw;
-    max-width: 380px;
+    max-width: 400px;
     height: fit-content;
   }
 
   .background_wish {
     width: 100vw;
-    max-width: 380px;
+    max-width: 400px;
   }
 
   .background_footage {
     width: 100vw;
-    max-width: 380px;
+    max-width: 400px;
     height: fit-content;
   }
 
   .app-container-finish {
     width: 100vw;
-    max-width: 380px;
+    max-width: 400px;
+    height: 100vh;
+  }
+
+  .guest-name {
+    top: 55%;
+  }
+
+  .open-invite-btn {
+    top: 70%;
+  }
+
+  .img_gate {
+    position: absolute;
+    z-index: 5;
+    height: 579px;
+    width: 481px;
+    top: 5%;
+    transform: translateX(-50%);
+  }
+
+  .img_mountain {
+    position: absolute;
+    z-index: 2;
+    height: 522px;
+    width: 782px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.5;
+  }
+
+  .img_janur {
+    position: absolute;
+    z-index: 6;
+    height: 404px;
+    width: 397px;
+    top: 14%;
+    transform: translateX(-50%);
+  }
+
+  .img_logo {
+    position: absolute;
+    z-index: 1000;
+    height: 34px;
+    width: 32px;
+    top: 16.5%;
+    transform: translateX(-50%);
+  }
+  /* Make lightbox container semi-dark with blur */
+  .yarl__container {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(2px); /* optional */
+  }
+
+  /* Make carousel background slightly darker if needed */
+  .yarl__carousel {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+  }
+  .img_opened {
+    position: absolute;
+    z-index: 6;
+    height: 400px;
+    width: 280px;
+    top: 33%;
+    transform: translateX(-50%);
+  }
+
+  .bunga_kiri {
+    z-index: 6;
+  }
+
+  .img_bunga3 {
+    position: absolute;
+    z-index: 3;
+    height: 313px;
+    width: 180px;
+    top: 40%;
+    left: 0%;
+    transform: translateX(-50%);
+  }
+
+  .img_bunga2 {
+    position: absolute;
+    z-index: 4;
+    height: 244px;
+    width: 180px;
+    top: 52%;
+    left: 0%;
+    transform: translateX(-50%);
+  }
+
+  .img_bunga4 {
+    position: absolute;
+    z-index: 4;
+    height: 242px;
+    width: 137px;
+    top: 68%;
+    left: 0%;
+    transform: translateX(-50%);
+  }
+
+  .img_bunga1 {
+    position: absolute;
+    z-index: 5;
+    height: 111px;
+    width: 85px;
+    top: 82%;
+    left: 0%;
+    transform: translateX(-50%);
+  }
+
+  .bunga_kanan {
+    z-index: 6;
+  }
+
+  .img_bungapink_kanan {
+    position: absolute;
+    z-index: 1;
+    height: 347px;
+    width: 200px;
+    top: 40%;
+    right: -10%;
+  }
+
+  .img_pohonijo_kanan {
+    position: absolute;
+    z-index: 4;
+    height: 244px;
+    width: 180px;
+    top: 52%;
+    right: -10%;
+  }
+
+  .img_padikapas_kanan {
+    position: absolute;
+    z-index: 5;
+    height: 244px;
+    width: 137px;
+    top: 68%;
+    right: 0%;
+  }
+
+  .img_tanaman_kanan {
+    position: absolute;
+    z-index: 5;
+    height: 122px;
+    width: 77px;
+    top: 72%;
+    right: 10%;
+  }
+
+  .img_bungabawah_kanan {
+    position: absolute;
+    z-index: 5;
+    height: 111px;
+    width: 82px;
+    top: 82%;
+    right: 0%;
+  }
+
+  .img_merak {
+    position: absolute;
+    z-index: 7;
+    height: 159px;
+    width: 212px;
+    top: 68%;
+    left: 10%;
+  }
+
+  .img_kupu2 {
+    position: absolute;
+    z-index: 100;
+    height: 48px;
+    width: 61px;
+    top: 40%;
+    left: 10%;
+    z-index: 7;
+  }
+
+  .img_kupu1 {
+    position: absolute;
+    z-index: 100;
+    height: 61px;
+    width: 59px;
+    top: 50%;
+    z-index: 7;
+    right: 20%;
+  }
+
+  .title {
+    position: absolute;
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    text-align: center;
+    z-index: 1000;
+    top: 27%;
+    color: #513738;
+  }
+
+  .title-opened {
+    position: absolute;
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    text-align: center;
+    z-index: 1000;
+    top: 26%;
+    color: #513738;
+  }
+  .title-theweddingof-opened {
+    position: absolute;
+    font-family: "Wittgenstein";
+    font-style: initial;
+    font-size: 18px;
+    text-align: center;
+    z-index: 1000;
+    top: 22%;
+    color: #513738;
+  }
+
+  .invite-wrapper {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* spacing between name and button */
+    z-index: 1000;
+  }
+
+  .guest-name {
+    font-family: "Wittgenstein";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    color: #513738;
+  }
+
+  .open-invite-btn {
+    width: 200px;
+    height: 40px;
+    font-family: "Wittgenstein";
+    background-color: #4f0a1c;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+
+  /* .bungataskiri {
+    position: absolute;
+    z-index: 5;
+    height: 165px;
+    width: 150px;
+    left: 0;
+    top: 0;
+  } */
+}
+
+@media (min-width: 430px) {
+  .wedding-footer {
+    max-width: 430px;
+    width: 100vw;
+  }
+
+  .app-container {
+    max-width: 430px;
+    width: 100vw;
+  }
+
+  .audio-player {
+    max-width: 430px;
+    width: 100vw;
+  }
+
+  .background_sec {
+    max-width: 430px;
+    width: 100vw;
+  }
+
+  .background_third {
+    max-width: 430px;
+    width: 100vw;
+  }
+
+  .background_story {
+    max-width: 430px;
+    width: 100vw;
     height: fit-content;
+    padding-bottom: 40px;
+  }
+
+  .background_fourth {
+    max-width: 430px;
+    width: 100vw;
+  }
+
+  .background_fifth {
+    max-width: 430px;
+    width: 100vw;
+  }
+
+  .gate_time {
+    width: 430px;
+    height: 520px;
+    left: 0;
+    right: 0;
+  }
+
+  .background_qr {
+    width: 100vw;
+    max-width: 430px;
+    height: fit-content;
+    padding-bottom: 40px;
+  }
+
+  .background_potrait {
+    width: 100vw;
+    max-width: 430px;
+    height: fit-content;
+  }
+
+  .background_gift {
+    width: 100vw;
+    max-width: 430px;
+    height: fit-content;
+  }
+
+  .bunga_gift {
+    top: 50%;
+  }
+
+  .background_filter {
+    width: 100vw;
+    max-width: 430px;
+    height: fit-content;
+  }
+
+  .background_wish {
+    width: 100vw;
+    max-width: 430px;
+  }
+
+  .background_footage {
+    width: 100vw;
+    max-width: 430px;
+    height: fit-content;
+  }
+
+  .app-container-finish {
+    width: 100vw;
+    max-width: 430px;
+    height: 100vh;
   }
 
   .guest-name {

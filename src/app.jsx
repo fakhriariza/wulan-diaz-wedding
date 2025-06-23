@@ -77,7 +77,7 @@ class MyComponent extends React.Component {
         />
         <AudioPlayer />
         {isOpened && (
-          <div className="animate__animated animate__fadeIn animate__slow">
+          <div className="render_content animate__animated animate__fadeIn animate__slow">
             <DoaComponent />
             <GroomBridesComponent />
             <OurStoryComponent data={getMissionData()} />
