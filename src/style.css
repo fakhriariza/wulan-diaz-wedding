@@ -1768,6 +1768,19 @@ h3 {
   position: relative;
   color: #513738;
 }
+@media (max-width: 429px) {
+ .background_fourth {
+       max-width: 100vw;
+    width: 100vw;
+
+  }
+
+  .background_fifth {
+     max-width: 100vw;
+    width: 100vw;
+  }
+
+}
 
 @media (max-width: 401px) {
   .wedding-footer {
