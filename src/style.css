@@ -2153,7 +2153,7 @@ h3 {
   cursor: pointer;
 
   position: relative; /* or absolute if needed */
-  z-index: 10; /* make sure it’s above any background elements */
+  z-index: 10001; /* make sure it’s above any background elements */
 }
   /* .bungataskiri {
     position: absolute;
